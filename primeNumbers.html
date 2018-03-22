@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> <!-- Beginning of head section -->
+	<title>Portfolio | Ameya Joshi | Norman, Oklahoma | Dynamically generated prime numbers</title>
+	<meta name="author" content="Ameya Joshi">
+	<meta name="description" content="This page allows the user to input two numbers, after which they click a button
+		to display all prime numbers in that range, inclusive of the numbers themselves if they are prime numbers also">
+	<meta name="keywords" content="prime numbers, javascript, html5, client side programming, CSS3">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- This links to the external JS file -->
+	<script type="text/javascript" src="portfolio.js">
+	</script>
+	
+	<!-- This links to the external CSS file -->
+	<link rel="stylesheet" href="portfolio_examples.css" type="text/css">
+	
+</head> <!-- End of head section -->
+
+<body>
+	<div id="container"> <!-- Div for all webpage content -->
+		
+		<div id="content"> <!-- Div for content -->
+		  <h1>Prime Number Generator</h1>
+		  
+		  <p id="primesParagraph">Please enter a starting number and an ending number to generate all prime numbers
+			  in that range. Note: The first number may not be greater than the second number.
+		  </p>
+		  <form id="primeNumbers" action="">
+			<label for="firstNumber">First Number: </label>
+			<input type="text" name="firstNumber" id="firstNumber" tabindex="1">
+			<br><br>
+			<label for="lastNumber">Last Number: </label>
+			<input type="text" name="lastNumber" id="lastNumber" tabindex="2">
+			<br><br>
+			<input id="submitB" type="submit" value="Submit" tabindex="3"
+				onclick="validateInput()">
+			<input id="resetB" type="reset" value="Reset Form" tabindex="4">
+		  </form>
+		</div> <!-- End of div for content -->
+		
+	</div> <!-- End of div for all webpage content -->
+</body> <!-- End of webpage body -->
+</html> <!-- Ending HTML tag -->
+
+
+
+
+
+
+
+
+
+
+

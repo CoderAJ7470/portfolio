@@ -1,0 +1,486 @@
+/* -------------------------------------------------------------
+
+Project: Ameya Joshi's Portfolio - my portfolio website
+File name: portfolio.css
+Last change: March 7, 2018
+Author: Ameya Joshi
+
+Color codes:
+	#194769: Used for navigation and introduction section background color, and for box-shadow color on figure elements in
+		code examples section
+	#f2855e: Used for text color in introduction section
+
+Images:
+	Code thumbnails  -->  screenshot size - 200px X 226px
+	Code thumbnails figure elements  -->  width: 240px; height: 360px
+	Resume thumbnail  -->  full-size PDF image reduced to 50% in Adobe Reader then cropped to 221 X 285 pixels in MS Paint
+		
+
+Borders:
+	Code thumbnails: 5px solid #2D466E
+
+Typography:
+	Code thumbnails: Arial | font size: 10 (in MS Paint)
+	
+/*------------------------- General Styles -------------------------*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+	margin: 0px;
+}
+
+h1 {
+	font-size: 56px;
+	padding-top: 0.5em;
+}
+
+h2 {
+	font-size: 32px;
+	margin-bottom: 40px;
+}
+
+h3 {
+	margin-bottom: 0px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.resumeSection, .exampleSection, .fccCertification, .footer {
+	text-align: center;
+	color: #194769;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.introduction, .resumeSection, .exampleSection, .fccCertification, .footer {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.fas {
+	color: #194769;
+}
+
+figcaption {
+	margin-top: 10px;	
+	color: #194769;
+	font-style: italic;
+	font-size: 16px;
+}
+
+/*--------------------- Header, Navigation and Introduction ---------------------*/
+
+.navigation {
+	color: #f2855e;
+	font-size: 16px;
+	padding-bottom: 0.3em;
+	padding-left: 2.5em;
+	padding-right: 2.5em;
+	display: grid;
+	display: -ms-grid;
+	grid-template-columns: 1fr 1fr;
+	-ms-grid-columns: 1fr 1fr;
+}
+
+.navigation li {
+	display: inline;
+	padding-right: 2.0em;
+	padding-top: 5px;
+}
+
+.navigation a {
+	color: #f6f6e9;
+}
+
+.menu {
+	text-align: right;
+	padding-top: 0.4em;
+	grid-column: 2;
+	-ms-grid-column: 2;
+}
+
+.handle {
+	padding-top: 1.1em;
+	text-align: left;
+	font-size: 1.1em;
+	letter-spacing: 0.2em;
+	font-family: 'Orbitron', sans-serif;
+	color: #f6f6e9;
+}
+
+.introduction {
+	width: 100%;
+	color: #f2855e;
+	text-align: center;
+	background-image: url("images/jumbotron_image.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.introductionContent {
+	background-color: rgba(25, 73, 105, 0.95);
+	padding-bottom: 5.2em;
+}
+
+.introduction p {
+	font-size: 24px;
+	line-height: 35px;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*------------------------- Resume Section -------------------------*/
+
+.resumeSection {
+	margin-top: 80px;
+	width: 50%;
+}
+
+.resumeSection h2 {
+	color: #194769;
+}
+
+.resumeGrid {
+	display: grid;
+	display: -ms-grid;
+	grid-template-columns: 1fr 1fr;
+	-ms-grid-columns: 1fr 1fr;
+}
+
+.resumeGridLeftCell img {
+	box-shadow: 1px 1px 3px #194769;
+	border-radius: 10px;
+	padding: 15px 12px 15px 12px;
+	margin-bottom: 15px;
+}
+
+.resumeGridLeftCell .openInNew {
+	margin-bottom: 3.2em;
+}
+
+.resumeGridRightCell {
+	text-align: left;
+	line-height: 1.5em;
+	grid-column: 2;
+	-ms-grid-column: 2;
+}
+
+.resumeGridRightCell ul {
+	padding-left: 0px;
+}
+
+.resumePointsHeader {
+	font-weight: 600;
+}
+
+/*------------------------- Code Examples Section -------------------------*/
+
+.exampleSection {
+	margin-top: 2.5em;
+	width: 65%;
+}
+
+.exampleShowcase {
+	display: flex;
+	display: -ms-flexbox;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.cards {
+	padding: 30px 30px 20px 30px;
+	margin: 2.5em;
+	flex-grow: 0;
+	flex-shrink: 0;
+	flex-basis: calc(20% - 20px);
+	box-shadow: 1px 1px 3px #194769;
+	border-radius: 0.7em;
+	transition: transform .2s;
+}
+
+.cards:hover {
+	-ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.02);
+}
+
+.exampleShowcase a {
+	text-decoration: none;
+	color: #194769;
+	font-style: italic;
+}
+
+/*------------------------- Learning Section -------------------------*/
+
+.fccCertification {
+	margin-top: 80px;
+}
+
+.fccCertification img {
+	width: 40%;
+	height: auto;
+	padding-bottom: 15px;
+}
+
+/*---------------------------- Footer -----------------------------*/
+
+.footer {
+	padding-top: 1.6em;
+	padding-bottom: 2em;
+	margin-top: 3.7em;
+	background-color: #194769;
+	font-size: 1em;
+	color: #f6f6e9;
+	line-height: 2.0em;
+}
+
+.footer h2 {
+	margin-bottom: 0em;
+}
+
+.footer a {
+	color: #f6f6e9;
+	text-decoration: none;
+}
+
+.footer p {
+	display: inline-block;
+	padding: 1.0em;
+	width: 5em;
+}
+
+.footerContact {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.footerContact .fas {
+	color: #f6f6e9;
+}
+
+.footerContact .fas, .footerContact .fab {
+	transition: transform .2s;
+}
+
+.footerContact .fas:hover, .footerContact .fab:hover {
+	-ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.2);
+}
+
+.createdByStatement {
+	padding-top: 2em;
+	font-size: 0.73em;
+	font-style: italic;
+}
+
+/* ----------------------------------------------------------------
+   ------------------------- MEDIA QUERIES -------------------------
+   ---------------------------------------------------------------- */
+
+/*--------------------- Header, Navigation and Introduction ---------------------*/
+
+@media only screen and (max-width: 1570px) {
+	.exampleSection {
+		width: 80%;
+	}
+
+	.footerSocial {
+		width: 90%;
+	}
+}
+
+@media only screen and (max-width: 1275px) {
+	h1{
+		font-size: 48px;
+		padding-top: 0.4em;
+	}
+
+	h2 {
+		font-size: 24px;
+	}
+
+	.navigation {
+		grid-template-columns: 35% 65%;
+		-ms-grid-columns: 30% 70%;
+	}
+
+	.navigation li {
+		padding-left: 0.5em;
+		padding-right: 0.5em;
+	}
+
+	.menu ul {
+		padding-left: 0em;
+	}
+
+	.introductionContent {
+		padding-bottom: 3.0em;
+	}
+
+	.resumeSection {
+		width: 80%;
+	}
+
+	.exampleSection {
+		width: 90%;
+	}
+
+	.fccCertification {
+		margin-top: 2.5em;
+		width: 75%;
+	}
+
+	.fccCertification img {
+		width: 60%;
+	}
+
+	.footerContact {
+		width: 80%;
+	}
+} /* End of max-width 1270px media query */
+
+@media only screen and (max-width: 900px) {
+	h1 {
+		font-size: 40px;
+		padding-left: 0.9em;
+		padding-right: 0.9em;
+	}
+
+	.navigation {
+		grid-template-columns: 1fr;
+		-ms-grid-columns: 1fr;
+	}
+
+	.navigation li {
+		padding-bottom: 0.3em;
+	}
+
+	.menu {
+		-ms-grid-column: 1;
+		grid-column: 1;
+		-ms-grid-row: 2;
+		grid-row: 2;
+	}
+
+	.menu, .handle {
+		text-align: center;
+	}
+
+	.menu ul {
+		padding-left: 0px;
+	}
+
+	.resumeGrid {
+		grid-template-columns: 1fr;
+		-ms-grid-columns: 1fr;
+	}
+
+	.resumeGridLeftCell img {
+		box-shadow: 1px 1px 3px #194769;
+		border-radius: 10px;
+		padding: 0px;
+		margin-bottom: 15px;
+	}
+
+	.resumeGridLeftCell .openInNew {
+		margin-bottom: 1em;
+	}
+	
+	.resumeGridRightCell {
+		text-align: center;
+		grid-column: 1;
+		-ms-grid-column: 1;
+		grid-row: 2;
+		-ms-grid-row: 2;
+	}
+
+	.exampleSection {
+		width: 90%;
+	}
+
+	.exampleSection h2 {
+		margin-bottom: 0.5em;
+	}
+
+	.fccCertification img {
+		width: 80%;
+	}
+	
+} /* End of max-width 900px media query */
+
+@media only screen and (max-width: 600px) {
+	h1 {
+		padding-top: 0.2em;
+		font-size: 32px;
+	}
+
+	.introduction p {
+		font-size: 1em;
+	}
+
+	.navigation li {
+		display: block;
+		padding-left: 0em;
+		padding-right: 0em;
+	}
+
+	.footerContact {
+		line-height: 0.1em;
+		width: 90%;
+	}
+
+	.footer p {
+		width: 1.2em;
+	}
+
+	.footer .fas, .footer .fab {
+		font-size: 1.5em;
+	}
+}
+
+@media only screen and (max-width: 350px) {
+	.navigation {
+		padding-left: 0em;
+		padding-right: 0em;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
