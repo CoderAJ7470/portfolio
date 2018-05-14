@@ -1,4 +1,4 @@
-My portfolio has been given a major update and revision (as of March 22, 2018).
+My portfolio has been given a major update and revision.
 
 I re-structured the code to use CSS Grid and Flexbox. A new colour palette was applied to the portfolio as well, and all sections were given modern visual effects to make the portfolio look more appealing. The header and footer have been redesigned, especially the header, which now has a background image with the parallax effect.
 
