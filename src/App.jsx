@@ -1,5 +1,5 @@
 import '../src/styles/roboto-styles.css';
-// import { Title } from './components/Title';
+import '../src/styles/portfolio.css';
 import { Main } from './components/MainContent';
 
 function App() {
