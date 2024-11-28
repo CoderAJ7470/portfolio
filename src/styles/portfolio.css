@@ -5,6 +5,7 @@
   --light-blue: #cbdceb;
 }
 
+/* Body */
 body {
   padding: 0;
   margin: 0;
@@ -16,9 +17,11 @@ body {
   background-color: var(--slate-blue);
 }
 
+/* Main content introduction section */
 .main-content-wrapper {
   width: 85%;
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .main-content-wrapper h1 {
@@ -30,7 +33,75 @@ body {
   font-size: 2rem;
 }
 
-@media only screen and (min-width: 400px) and (max-width: 900px) {
+.windows-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Aircraft windows section */
+.window {
+  height: 400px;
+  width: 300px;
+  border: 35px solid var(--off-white);
+  border-radius: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 5px 5px 25px rgba(0, 0, 0, 0.25);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+}
+
+.shade1,
+.shade2,
+.shade3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 410px;
+  width: 310px;
+  top: -5px;
+  position: absolute;
+  font-size: 2rem;
+  background-color: var(--off-white);
+  color: var(--slate-blue);
+  transition: top 0.5s ease;
+}
+
+.slide {
+  top: -90%;
+}
+
+.shade1::before,
+.shade2::before,
+.shade3::before {
+  content: '';
+  position: absolute;
+  width: 70px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #adb5bd;
+  top: 380px;
+  left: 125px;
+}
+
+.shade1Text,
+.shade2Text,
+.shade3Text {
+  width: 90%;
+  text-align: center;
+}
+
+/* Media queries */
+@media only screen and (min-width: 300px) {
   .mobile-only {
     display: inline-block;
   }
@@ -47,5 +118,23 @@ body {
 
   .desktop-only {
     display: inline;
+  }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1080px) {
+  .window-edge-outer {
+    height: 220px;
+    width: 170px;
+    border: 25px solid var(--off-white);
+    border-radius: 40%;
+  }
+}
+
+@media only screen and (min-width: 1080px) and (max-width: 1280px) {
+  .window-edge-outer {
+    height: 310px;
+    width: 240px;
+    border: 30px solid var(--off-white);
+    border-radius: 40%;
   }
 }

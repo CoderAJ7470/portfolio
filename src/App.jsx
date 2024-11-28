@@ -1,6 +1,6 @@
 import '../src/styles/roboto-styles.css';
 import '../src/styles/portfolio.css';
-import { Main } from './components/MainContent';
+import Main from './pages/MainContent.jsx';
 
 function App() {
   return (

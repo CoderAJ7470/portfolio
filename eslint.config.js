@@ -35,6 +35,9 @@ export default [
         { allowConstantExport: true },
       ],
     },
+    extends: {
+      extends: ['plugin:react/recommended'],
+    },
   },
 ];
 
