@@ -5,12 +5,23 @@
   --light-blue: #cbdceb;
 }
 
+/* Font styles used for entire site */
+.main-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Body */
 body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   color: var(--off-white);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: normal;
   background-image: linear-gradient(to bottom, var(--blue), var(--slate-blue));
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -18,32 +29,45 @@ body {
 }
 
 /* Main content introduction section */
-.main-content-wrapper {
+.main-content-wrapper,
+.portfolio-content {
   width: 85%;
   margin-top: 2rem;
   margin-bottom: 2rem;
-}
-
-.main-content-wrapper h1 {
-  font-size: 3rem;
-  margin: 0;
 }
 
 .main-content-wrapper p {
   font-size: 2rem;
 }
 
+.main-content-title {
+  display: flex;
+  align-items: center;
+}
+
+.main-content-title h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.portfolio-photo {
+  border: 2px solid var(--off-white);
+  border-radius: 50%;
+  width: 80px;
+  margin-right: 1.5rem;
+}
+
+/* Aircraft windows section */
 .windows-container {
   position: relative;
   display: flex;
   justify-content: space-between;
 }
 
-/* Aircraft windows section */
 .window {
   height: 400px;
   width: 300px;
-  border: 35px solid var(--off-white);
+  border: 35px solid var(--blue);
   border-radius: 40%;
   display: flex;
   justify-content: center;
@@ -59,9 +83,7 @@ body {
   -moz-transform: translate3d(0, 0, 0);
 }
 
-.shade1,
-.shade2,
-.shade3 {
+.shade {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -71,33 +93,53 @@ body {
   top: -5px;
   position: absolute;
   font-size: 2rem;
-  background-color: var(--off-white);
   color: var(--slate-blue);
-  transition: top 0.5s ease;
+  background-color: var(--off-white);
+  cursor: pointer;
+  transition: top 0.8s ease;
 }
 
 .slide {
   top: -90%;
 }
 
-.shade1::before,
-.shade2::before,
-.shade3::before {
+.shade::before {
   content: '';
   position: absolute;
-  width: 70px;
+  width: 90px;
   height: 10px;
-  border-radius: 10px;
-  background-color: #adb5bd;
+  border-radius: 80%;
+  background-color: var(--slate-blue);
   top: 380px;
-  left: 125px;
+  left: 110px;
 }
 
-.shade1Text,
-.shade2Text,
-.shade3Text {
+.shadeText {
   width: 90%;
   text-align: center;
+}
+
+.window-links {
+  text-align: center;
+}
+
+.window-links a,
+.back-to-home-link a {
+  font-size: 2rem;
+  color: var(--off-white);
+  text-decoration: none;
+}
+
+/* Portfolio Page */
+.portfolio-content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-content h1 {
+  font-size: 4rem;
+  margin: 0;
 }
 
 /* Media queries */
@@ -121,20 +163,8 @@ body {
   }
 }
 
-@media only screen and (min-width: 900px) and (max-width: 1080px) {
-  .window-edge-outer {
-    height: 220px;
-    width: 170px;
-    border: 25px solid var(--off-white);
-    border-radius: 40%;
-  }
-}
+/* @media only screen and (min-width: 900px) and (max-width: 1080px) {
+} */
 
-@media only screen and (min-width: 1080px) and (max-width: 1280px) {
-  .window-edge-outer {
-    height: 310px;
-    width: 240px;
-    border: 30px solid var(--off-white);
-    border-radius: 40%;
-  }
-}
+/* @media only screen and (min-width: 1080px) and (max-width: 1280px) {
+} */

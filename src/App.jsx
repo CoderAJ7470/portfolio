@@ -1,10 +1,8 @@
-import '../src/styles/roboto-styles.css';
-import '../src/styles/portfolio.css';
 import Main from './pages/MainContent.jsx';
 
 function App() {
   return (
-    <section className='roboto-regular'>
+    <section className='main-content-container'>
       <Main />
     </section>
   );

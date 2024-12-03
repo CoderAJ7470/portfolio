@@ -2,15 +2,23 @@ import { useEffect, useRef } from 'react';
 import { Link } from 'react-router';
 
 export const Windows = () => {
-  const shadeRefLink = useRef(null);
-
   const slideShade = (e) => {
-    const shadeId = e.target.id;
+    let shadeId = '';
 
-    if (shadeId) {
-      const windowShade = document.getElementById(shadeId);
-      windowShade.classList.toggle('slide');
+    // If the user clicks on/taps the window shade text, then you still want the
+    // shade to slide up
+    if (e.target.className === 'shadeText') {
+      // prevent event from bubbling up to parent div and firing twice
+      // resulting in the window opening and closing so quickly that it
+      // looks as if it is not opening at all
+      e.stopPropagation();
+      shadeId = e.target.parentNode.id;
+    } else {
+      shadeId = e.target.id;
     }
+
+    const windowShade = document.getElementById(shadeId);
+    windowShade.classList.toggle('slide');
   };
 
   const handleOnKeyDown = (e) => {
@@ -27,22 +35,22 @@ export const Windows = () => {
         alt='An interactive aircraft window with a slideable window shade'
       >
         <div
-          className='shade1'
+          className='shade'
           id='shadeOne'
           tabIndex={0}
           onClick={slideShade}
           onKeyDown={handleOnKeyDown}
         >
-          <div
-            className='shade1Text'
+          <p
+            className='shadeText'
             onClick={slideShade}
             onKeyDown={handleOnKeyDown}
           >
-            My FE Dev Portfolio
-          </div>
+            Curriculum Vitae and Skills
+          </p>
         </div>
         <div className='window-links'>
-          <Link to='/portfolio'>My Frontend Dev Portfolio</Link>
+          <Link to='/portfolio'>Take me to the resume and skills page</Link>
         </div>
       </div>
       <div
@@ -51,22 +59,22 @@ export const Windows = () => {
         alt='An interactive aircraft window with a slideable window shade'
       >
         <div
-          className='shade2'
+          className='shade'
           id='shadeTwo'
           tabIndex={0}
           onClick={slideShade}
           onKeyDown={handleOnKeyDown}
         >
-          <div
-            className='shade2Text'
+          <p
+            className='shadeText'
             onClick={slideShade}
             onKeyDown={handleOnKeyDown}
           >
-            My Meteorology Stuff
-          </div>
+            Career Experience
+          </p>
         </div>
         <div className='window-links'>
-          <Link to='/meteorology-stuff'>Meteorology Stuff</Link>
+          <Link to='/experience'>Key career experiences</Link>
         </div>
       </div>
       <div
@@ -75,22 +83,22 @@ export const Windows = () => {
         alt='An interactive aircraft window with a slideable window shade'
       >
         <div
-          className='shade3'
+          className='shade'
           id='shadeThree'
           tabIndex={0}
           onClick={slideShade}
           onKeyDown={handleOnKeyDown}
         >
-          <div
-            className='shade3Text'
+          <p
+            className='shadeText'
             onClick={slideShade}
             onKeyDown={handleOnKeyDown}
           >
-            My Aviation Stuff
-          </div>
+            Outside of Work
+          </p>
         </div>
         <div className='window-links'>
-          <Link to='/aviation-stuff'>Aviation Stuff</Link>
+          <Link to='/outside-work'>My hobbies and other things</Link>
         </div>
       </div>
     </section>
