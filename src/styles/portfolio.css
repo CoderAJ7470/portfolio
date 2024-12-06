@@ -18,14 +18,10 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: var(--off-white);
+  color: var(--blue);
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-style: normal;
-  background-image: linear-gradient(to bottom, var(--blue), var(--slate-blue));
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-color: var(--slate-blue);
 }
 
 /* Main content introduction section */
@@ -38,6 +34,7 @@ body {
 
 .main-content-wrapper p {
   font-size: 2rem;
+  letter-spacing: 0.01rem;
 }
 
 .main-content-title {
@@ -46,14 +43,16 @@ body {
 }
 
 .main-content-title h1 {
-  font-size: 4rem;
   margin: 0;
+  width: 100%;
+  border-bottom: 2px solid var(--blue);
 }
 
 .portfolio-photo {
-  border: 2px solid var(--off-white);
+  border: 2px solid var(--blue);
   border-radius: 50%;
   width: 80px;
+  padding: 2px;
   margin-right: 1.5rem;
 }
 
@@ -67,17 +66,17 @@ body {
 .window {
   height: 400px;
   width: 300px;
-  border: 35px solid var(--blue);
+  border: 25px solid var(--blue);
   border-radius: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   overflow: hidden;
+  background-image: linear-gradient(to bottom, var(--blue), var(--slate-blue));
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   box-shadow: inset 5px 5px 25px rgba(0, 0, 0, 0.25);
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
   transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
@@ -123,23 +122,86 @@ body {
   text-align: center;
 }
 
-.window-links a,
-.back-to-home-link a {
-  font-size: 2rem;
-  color: var(--off-white);
-  text-decoration: none;
-}
-
-/* Portfolio Page */
+/* Portfolio Page and Resume */
 .portfolio-content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: linear-gradient(to bottom, var(--blue), var(--slate-blue));
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: var(--off-white);
+}
+
+.portfolio-content {
+  width: 85%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .portfolio-content h1 {
-  font-size: 4rem;
   margin: 0;
+}
+
+.portfolio-content h2 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* This class is located in Resume.jsx */
+.resume {
+  margin-bottom: 1.5rem;
+  margin-right: 3rem;
+  width: fit-content;
+  padding: 0.1rem;
+  position: relative;
+}
+
+.resume-and-certifications {
+  display: flex;
+  flex-direction: row;
+}
+
+.resume-and-certifications img {
+  width: 257px;
+  height: 257px;
+}
+
+.open-resume-icon-link svg {
+  width: 2rem;
+  position: absolute;
+  top: -20px;
+  left: 410px;
+  background: none;
+  transition: fill 0.5s ease;
+}
+
+.open-resume-icon-link:focus svg {
+  fill: rgb(0, 230, 215);
+}
+
+.resume img {
+  width: 200px;
+  height: 257px;
+}
+
+.resume img:nth-of-type(1) {
+  margin-right: 0.5rem;
+}
+
+.back-to-home-link {
+  margin-top: 2rem;
+}
+
+.skills,
+.back-to-home-link {
+  width: 85%;
+}
+
+.skills li {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  letter-spacing: 0.02rem;
 }
 
 /* Media queries */
@@ -154,6 +216,7 @@ body {
 }
 
 @media only screen and (min-width: 900px) {
+  /* Landing page */
   .mobile-only {
     display: none;
   }

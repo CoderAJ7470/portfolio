@@ -50,7 +50,7 @@ export const Windows = () => {
           </p>
         </div>
         <div className='window-links'>
-          <Link to='/portfolio'>Take me to the resume and skills page</Link>
+          <Link to='/portfolio'>See my resume and skills</Link>
         </div>
       </div>
       <div

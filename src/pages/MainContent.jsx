@@ -1,7 +1,12 @@
+import { useEffect } from 'react';
 import { Windows } from '../components/Windows';
 import portfolioImage from '../assets/portfolio-site-photo.jpg';
 
 const Main = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className='main-content-wrapper'>
       <section className='main-content'>
@@ -11,9 +16,9 @@ const Main = () => {
             src={portfolioImage}
             alt="Ameya's portfolio photograph"
           />
-          <h1 tabIndex={0}>Welcome!</h1>
+          <h1>Hi there!</h1>
         </section>
-        <p tabIndex={0}>
+        <p>
           I'm <b>Ameya Joshi&nbsp;</b>, a Frontend/React developer based in the
           Oklahoma City metro area, with 5+ years of professional experience
           that includes <b>React</b> and <b>TypeScript</b>. I enjoy coding, am
