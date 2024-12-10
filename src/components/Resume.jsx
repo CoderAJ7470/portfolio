@@ -9,26 +9,22 @@ import '../styles/common.css';
 const Resume = () => {
   return (
     <>
-      <section className='resume'>
-        <a
-          href={FE_Resume}
-          alt='Opens pdf resume in new tab or window'
-          target='_blank'
-          className='open-resume-icon-link'
-        >
-          <ArrowTopRightOnSquareIcon />
-        </a>
+      <div className='resume'>
+        <h2>Resume</h2>
         <a href={FE_Resume}>
           <img
             src={resumeThumbnail1}
+            className='resume-thumbnails'
             alt={`thumbnail of page 1 of Ameya's resume`}
           />
           <img
             src={resumeThumbnail2}
+            className='resume-thumbnails'
             alt={`thumbnail of page 2 of Ameya's resume`}
           />
         </a>
-      </section>
+        <p>Thumbnail opens the full-size PDF</p>
+      </div>
     </>
   );
 };

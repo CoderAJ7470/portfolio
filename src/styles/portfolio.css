@@ -5,14 +5,6 @@
   --light-blue: #cbdceb;
 }
 
-/* Font styles used for entire site */
-.main-content-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 /* Body */
 body {
   padding: 0;
@@ -24,25 +16,25 @@ body {
   font-style: normal;
 }
 
-/* Main content introduction section */
-.main-content-wrapper,
-.portfolio-content {
-  width: 85%;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+.main-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.main-content-wrapper p {
+/* Main content introduction section */
+.main-content-wrapper-p {
   font-size: 2rem;
   letter-spacing: 0.01rem;
 }
 
-.main-content-title {
+.main-content-header {
   display: flex;
   align-items: center;
 }
 
-.main-content-title h1 {
+.main-content-header h1 {
   margin: 0;
   width: 100%;
   border-bottom: 2px solid var(--blue);
@@ -54,72 +46,6 @@ body {
   width: 80px;
   padding: 2px;
   margin-right: 1.5rem;
-}
-
-/* Aircraft windows section */
-.windows-container {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-}
-
-.window {
-  height: 400px;
-  width: 300px;
-  border: 25px solid var(--blue);
-  border-radius: 40%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-  background-image: linear-gradient(to bottom, var(--blue), var(--slate-blue));
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  box-shadow: inset 5px 5px 25px rgba(0, 0, 0, 0.25);
-  transform: translate3d(0, 0, 0);
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-}
-
-.shade {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 410px;
-  width: 310px;
-  top: -5px;
-  position: absolute;
-  font-size: 2rem;
-  color: var(--slate-blue);
-  background-color: var(--off-white);
-  cursor: pointer;
-  transition: top 0.8s ease;
-}
-
-.slide {
-  top: -90%;
-}
-
-.shade::before {
-  content: '';
-  position: absolute;
-  width: 90px;
-  height: 10px;
-  border-radius: 80%;
-  background-color: var(--slate-blue);
-  top: 380px;
-  left: 110px;
-}
-
-.shadeText {
-  width: 90%;
-  text-align: center;
-}
-
-.window-links {
-  text-align: center;
 }
 
 /* Portfolio Page and Resume */
@@ -139,16 +65,16 @@ body {
   margin-bottom: 2rem;
 }
 
-.portfolio-content h1 {
+.portfolio-content-header h1 {
   margin: 0;
+  border-bottom: 2px solid var(--off-white);
 }
 
 .portfolio-content h2 {
-  margin-top: 3rem;
   margin-bottom: 1rem;
 }
 
-/* This class is located in Resume.jsx */
+/* The following classes through .resume-thumbnails are located in Resume.jsx */
 .resume {
   margin-bottom: 1.5rem;
   margin-right: 3rem;
@@ -157,44 +83,31 @@ body {
   position: relative;
 }
 
-.resume-and-certifications {
-  display: flex;
-  flex-direction: row;
-}
-
-.resume-and-certifications img {
-  width: 257px;
-  height: 257px;
-}
-
-.open-resume-icon-link svg {
-  width: 2rem;
-  position: absolute;
-  top: -20px;
-  left: 410px;
-  background: none;
-  transition: fill 0.5s ease;
-}
-
-.open-resume-icon-link:focus svg {
-  fill: rgb(0, 230, 215);
-}
-
-.resume img {
+.resume-thumbnails {
   width: 200px;
   height: 257px;
 }
 
-.resume img:nth-of-type(1) {
+.resume-thumbnails:nth-of-type(1) {
   margin-right: 0.5rem;
 }
 
-.back-to-home-link {
-  margin-top: 2rem;
+/* The following classes through .cdl-certification are located in FE_Portfolio.jsx */
+.resume-and-certifications {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.skills,
-.back-to-home-link {
+.cdl-badge {
+  width: 257px;
+  height: 257px;
+}
+
+.cdl-certification {
+  text-align: center;
+}
+
+.skills {
   width: 85%;
 }
 
@@ -226,8 +139,25 @@ body {
   }
 }
 
-/* @media only screen and (min-width: 900px) and (max-width: 1080px) {
-} */
+@media only screen and (max-width: 900px) {
+  .main-content-wrapper-p {
+    font-size: 1.5rem;
+  }
 
-/* @media only screen and (min-width: 1080px) and (max-width: 1280px) {
-} */
+  .portfolio-photo {
+    width: 70px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main-content-wrapper-p {
+    font-size: 1.2rem;
+    letter-spacing: 0.02rem;
+    line-height: 25px;
+  }
+
+  .portfolio-photo {
+    width: 55px;
+    margin-right: 0.7rem;
+  }
+}

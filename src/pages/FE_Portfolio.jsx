@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router';
+import Header from '../components/Header';
 import Resume from '../components/Resume';
 import googleCDLBadge from '../assets/cdl_certification.png';
 
@@ -14,14 +14,28 @@ const FE_Portfolio = () => {
   return (
     <div className='portfolio-content-wrapper'>
       <section className='portfolio-content'>
-        <h1>Resume and Skills</h1>
-        <h2>Resume</h2>
+        <Header
+          sectionClass='portfolio-content-header'
+          heading='Resume and Skills'
+        />
+
         <section className='resume-and-certifications'>
           <Resume />
-          <img
-            src={googleCDLBadge}
-            alt='Google Cloud Digital Leader Certification badge'
-          />
+
+          <section className='cdl-certification'>
+            <h2>CDL Certification</h2>
+            <a
+              href='https://www.credly.com/badges/cc5feff7-0279-49bb-b66c-fd42ed5e8df5/public_url'
+              target='_blank'
+            >
+              <img
+                src={googleCDLBadge}
+                className='cdl-badge'
+                alt='Google Cloud Digital Leader Certification badge'
+              />
+            </a>
+            <p>Thumbnail opens cert. in a new tab/window</p>
+          </section>
         </section>
 
         <section className='skills'>
@@ -40,10 +54,6 @@ const FE_Portfolio = () => {
             <li>Some experience with NodeJS, Splunk, Postman</li>
             <li>Writing unit tests with React Testing Library, Jest, Enzyme</li>
           </ul>
-        </section>
-
-        <section className='back-to-home-link'>
-          <Link to='/'>Back to landing page</Link>
         </section>
       </section>
     </div>

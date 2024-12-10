@@ -5,8 +5,6 @@ import CareerExperience from './pages/CareerExperience.jsx';
 import OutsideOfWork from './pages/OutsideOfWork.jsx';
 import FE_Portfolio from './pages/FE_Portfolio.jsx';
 
-// TO-DO: determine whether entire roboto styles file is needed
-// import '../src/styles/roboto-styles.css';
 import '../src/styles/portfolio.css';
 
 const router = createBrowserRouter([

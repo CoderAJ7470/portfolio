@@ -1,7 +1,9 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router';
 
-export const Windows = () => {
+import '../styles/windows.css';
+
+const Windows = () => {
   const slideShade = (e) => {
     let shadeId = '';
 
@@ -104,3 +106,5 @@ export const Windows = () => {
     </section>
   );
 };
+
+export default Windows;
