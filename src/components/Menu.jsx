@@ -1,14 +1,18 @@
 import { Link } from 'react-router';
 
-const Menu = ({ home, portfolio, experience, outsideWork }) => {
+const Menu = () => {
   return (
-    <section>
-      <ul>
-        <Link to='/'>Landing Page</Link>
-        <Link to='/portfolio'>Portfolio</Link>
-        <Link to='/experience'>Career Experience</Link>
-        <Link to='/outside-work'>Hobbies</Link>
-      </ul>
+    <section className='menu-icon'>
+      <div className='bar'></div>
+      <div className='bar'></div>
+      <div className='bar'></div>
+
+      {/* <ul>
+        {home && <Link to='/'>Landing Page</Link>}
+        {portfolio && <Link to='/portfolio'>Portfolio</Link>}
+        {experience && <Link to='/experience'>Career Experience</Link>}
+        {outsideWork && <Link to='/outside-work'>Hobbies</Link>}
+      </ul> */}
     </section>
   );
 };

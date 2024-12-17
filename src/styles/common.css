@@ -1,8 +1,7 @@
 /* Common styles  */
 h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   letter-spacing: 1px;
-  border-bottom: 2px solid var(--off-white);
 }
 
 h2 {

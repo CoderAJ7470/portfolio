@@ -23,6 +23,40 @@ body {
   align-items: center;
 }
 
+.main-content-heading-and-menu {
+  border-bottom: 2px solid var(--blue);
+}
+
+.portfolio-heading-and-menu {
+  border-bottom: 2px solid var(--off-white);
+}
+
+.main-content-heading-and-menu,
+.portfolio-heading-and-menu {
+  display: flex;
+  flex-grow: 1;
+}
+
+.main-content-heading-and-menu .bar {
+  background-color: var(--blue);
+}
+
+.portfolio-heading-and-menu .bar {
+  border-bottom: 2px solid var(--off-white);
+}
+
+/* Drop-down menu */
+.menu-icon {
+  cursor: pointer;
+  align-self: center;
+  margin-left: auto;
+}
+
+.bar:nth-of-type(1),
+.bar:nth-of-type(2) {
+  margin-bottom: 0.313rem;
+}
+
 /* Main content introduction section */
 .main-content-wrapper-p {
   font-size: 2rem;
@@ -36,8 +70,6 @@ body {
 
 .main-content-header h1 {
   margin: 0;
-  width: 100%;
-  border-bottom: 2px solid var(--blue);
 }
 
 .portfolio-photo {
@@ -67,7 +99,6 @@ body {
 
 .portfolio-content-header h1 {
   margin: 0;
-  border-bottom: 2px solid var(--off-white);
 }
 
 .portfolio-content h2 {
@@ -95,12 +126,10 @@ body {
 /* The following classes through .cdl-certification are located in FE_Portfolio.jsx */
 .resume-and-certifications {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .cdl-badge {
   width: 257px;
-  height: 257px;
 }
 
 .cdl-certification {
@@ -109,6 +138,10 @@ body {
 
 .skills {
   width: 85%;
+}
+
+.skills > h2 {
+  margin-top: 0;
 }
 
 .skills li {
@@ -126,6 +159,31 @@ body {
   .desktop-only {
     display: none;
   }
+
+  .menu-icon {
+    margin-top: 0.313rem;
+  }
+
+  .bar {
+    width: 1.5rem;
+    height: 0.188rem;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .menu-icon {
+    margin-top: 0.5rem;
+  }
+
+  .bar {
+    width: 2rem;
+    height: 0.2rem;
+  }
+
+  .bar:nth-of-type(1),
+  .bar:nth-of-type(2) {
+    margin-bottom: 0.5rem;
+  }
 }
 
 @media only screen and (min-width: 900px) {
@@ -137,6 +195,20 @@ body {
   .desktop-only {
     display: inline;
   }
+
+  .menu-icon {
+    margin-top: 0.75rem;
+  }
+
+  .bar {
+    width: 3rem;
+    height: 0.25rem;
+  }
+
+  .bar:nth-of-type(1),
+  .bar:nth-of-type(2) {
+    margin-bottom: 0.75rem;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -146,6 +218,15 @@ body {
 
   .portfolio-photo {
     width: 70px;
+  }
+
+  .resume-thumbnails {
+    width: 120px;
+    height: 154px;
+  }
+
+  .cdl-badge {
+    width: 156px;
   }
 }
 
@@ -159,5 +240,27 @@ body {
   .portfolio-photo {
     width: 55px;
     margin-right: 0.7rem;
+  }
+
+  .skills li {
+    font-size: 1.2rem;
+  }
+
+  .resume {
+    margin-right: 0;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  .resume-and-certifications {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* Lest anyone has an oddly narrow mobile device */
+@media only screen and (max-width: 300px) {
+  .resume-thumbnails:nth-of-type(1) {
+    margin-right: 0;
   }
 }

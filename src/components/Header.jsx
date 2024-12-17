@@ -1,8 +1,14 @@
 import portfolioImage from '../assets/portfolio-site-photo.jpg';
+import Menu from './Menu';
 
-const Header = ({ photo = false, sectionClass, heading }) => {
+const Header = ({
+  photo = false,
+  headerClass,
+  headingAndMenuClass,
+  heading,
+}) => {
   return (
-    <header className={sectionClass}>
+    <header className={headerClass}>
       {photo && (
         <img
           className='portfolio-photo'
@@ -10,7 +16,10 @@ const Header = ({ photo = false, sectionClass, heading }) => {
           alt="Ameya's portfolio photograph"
         />
       )}
-      <h1>{heading}</h1>
+      <section className={headingAndMenuClass}>
+        <h1>{heading}</h1>
+        <Menu />
+      </section>
     </header>
   );
 };

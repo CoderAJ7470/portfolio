@@ -10,7 +10,12 @@ const Main = () => {
   return (
     <div className='main-content-wrapper'>
       <section className='main-content'>
-        <Header photo sectionClass='main-content-header' heading='Hi there!' />
+        <Header
+          photo
+          headerClass='main-content-header'
+          headingAndMenuClass='main-content-heading-and-menu'
+          heading='Hi there!'
+        />
 
         <p className='main-content-wrapper-p'>
           I'm <b>Ameya Joshi&nbsp;</b>, a Frontend/React developer based in the
