@@ -1,18 +1,20 @@
 import { Link } from 'react-router';
 
-const Menu = () => {
+const Menu = ({ home, portfolio, experience, outsideWork }) => {
   return (
-    <section className='menu-icon'>
-      <div className='bar'></div>
-      <div className='bar'></div>
-      <div className='bar'></div>
+    <section className='menu-wrapper'>
+      <section className='menu-icon'>
+        <div className='bar'></div>
+        <div className='bar'></div>
+        <div className='bar'></div>
+      </section>
 
-      {/* <ul>
+      <nav className='drop-down-nav'>
         {home && <Link to='/'>Landing Page</Link>}
         {portfolio && <Link to='/portfolio'>Portfolio</Link>}
         {experience && <Link to='/experience'>Career Experience</Link>}
         {outsideWork && <Link to='/outside-work'>Hobbies</Link>}
-      </ul> */}
+      </nav>
     </section>
   );
 };

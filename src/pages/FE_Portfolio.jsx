@@ -16,8 +16,12 @@ const FE_Portfolio = () => {
       <section className='portfolio-content'>
         <Header
           headerClass='portfolio-content-header'
+          hasMenu
           headingAndMenuClass='portfolio-heading-and-menu'
           heading='Resume and Skills'
+          home
+          experience
+          outSideWork
         />
 
         <section className='resume-and-certifications'>

@@ -4,8 +4,13 @@ import Menu from './Menu';
 const Header = ({
   photo = false,
   headerClass,
+  hasMenu = false,
   headingAndMenuClass,
   heading,
+  home,
+  portfolio,
+  experience,
+  outSideWork,
 }) => {
   return (
     <header className={headerClass}>
@@ -18,7 +23,14 @@ const Header = ({
       )}
       <section className={headingAndMenuClass}>
         <h1>{heading}</h1>
-        <Menu />
+        {hasMenu && (
+          <Menu
+            home={home}
+            portfolio={portfolio}
+            experience={experience}
+            outsideWork={outSideWork}
+          />
+        )}
       </section>
     </header>
   );

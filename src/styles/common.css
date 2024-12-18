@@ -1,3 +1,11 @@
+/* Body styles for all pages except landing page */
+body:has(.portfolio-content-wrapper) {
+  background-image: linear-gradient(to bottom, var(--blue), var(--slate-blue));
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: var(--off-white);
+}
+
 /* Common styles  */
 h1 {
   font-size: 3.5rem;
@@ -39,6 +47,37 @@ a:focus {
   margin-bottom: 2rem;
 }
 
+.menu-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.drop-down-nav {
+  background-color: var(--off-white);
+  position: absolute;
+  top: 70px;
+  right: -300px;
+  padding: 1rem;
+  white-space: nowrap;
+  transition: right 1s ease;
+}
+
+.drop-down-nav-slide {
+  right: 0px;
+}
+
+.drop-down-nav a {
+  color: var(--blue);
+  text-decoration: none;
+  display: block;
+}
+
+.drop-down-nav a:nth-of-type(1),
+.drop-down-nav a:nth-last-of-type(2) {
+  margin-bottom: 0.5rem;
+}
+
 /* Media queries */
 @media only screen and (max-width: 900px) {
   h1 {
@@ -53,11 +92,16 @@ a:focus {
 
 @media only screen and (max-width: 600px) {
   h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     letter-spacing: 1px;
+  }
+
+  .resume p,
+  .cdl-certification p {
+    font-size: 1rem;
   }
 }
