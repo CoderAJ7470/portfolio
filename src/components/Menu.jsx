@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router';
 
 const Menu = ({ home, portfolio, experience, outsideWork }) => {
@@ -13,7 +13,7 @@ const Menu = ({ home, portfolio, experience, outsideWork }) => {
 
   const handleOnKeyDown = (e) => {
     if (e.key === 'Enter') {
-      handleNavOnClick(e);
+      handleNavOnClick();
     }
   };
 

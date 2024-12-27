@@ -28,16 +28,19 @@ body {
   width: 100%;
 }
 
-.portfolio-heading-and-menu {
+.portfolio-heading-and-menu,
+.experience-heading-and-menu {
   border-bottom: 2px solid var(--off-white);
 }
 
-.portfolio-heading-and-menu h1 {
+.portfolio-heading-and-menu h1,
+.experience-heading-and-menu h1 {
   flex-grow: 1;
 }
 
 .main-content-heading-and-menu,
-.portfolio-heading-and-menu {
+.portfolio-heading-and-menu,
+.experience-heading-and-menu {
   display: flex;
   align-items: center;
 }
@@ -59,11 +62,6 @@ body {
 }
 
 /* Main content introduction section */
-.main-content-wrapper-p {
-  font-size: 2rem;
-  letter-spacing: 0.01rem;
-}
-
 .main-content-header {
   display: flex;
   align-items: center;
@@ -81,21 +79,15 @@ body {
   margin-right: 1.5rem;
 }
 
-/* Portfolio Page and Resume */
-.portfolio-content-wrapper {
+.portfolio-content-wrapper,
+.career-experience-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.portfolio-content {
-  width: 85%;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  overflow: hidden;
-}
-
-.portfolio-content-header h1 {
+.portfolio-content-header h1,
+.experience-heading-and-menu h1 {
   margin: 0;
 }
 
@@ -124,6 +116,7 @@ body {
 /* The following classes through .cdl-certification are located in FE_Portfolio.jsx */
 .resume-and-certifications {
   display: flex;
+  justify-content: center;
 }
 
 .cdl-badge {
@@ -146,6 +139,74 @@ body {
   font-size: 1.5rem;
   margin-top: 0.5rem;
   letter-spacing: 0.02rem;
+}
+
+/* Career experience */
+.experience-content-wrapper {
+  margin-top: 1rem;
+}
+
+.accordion-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.accordion-wrapper p {
+  font-size: 1.5rem;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-buttons {
+  border: none;
+  color: var(--blue);
+  font-size: 1.5rem;
+  padding: 1rem;
+  background-color: var(--light-blue);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.section-buttons:hover,
+.active-button {
+  background-color: var(--off-white);
+}
+
+.section-buttons::after {
+  content: '\2303';
+  float: right;
+  margin-left: 1rem;
+  position: absolute;
+  right: 20px;
+  transition: transform 0.8s ease;
+}
+
+.button-selected::after {
+  transform: rotate(180deg);
+}
+
+.expandable {
+  display: grid;
+  grid-template-rows: 0fr;
+  border-width: 0 3px 4px 3px;
+  border-right-color: var(--light-blue);
+  border-left-color: var(--light-blue);
+  border-bottom-color: var(--blue);
+  border-style: solid;
+  transition: grid-template-rows 0.8s ease-out;
+}
+
+.expandable .inner {
+  overflow: hidden;
+}
+
+.is-open {
+  grid-template-rows: 1fr;
 }
 
 /* Media queries */
@@ -226,12 +287,6 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-  .main-content-wrapper-p {
-    font-size: 1.2rem;
-    letter-spacing: 0.02rem;
-    line-height: 25px;
-  }
-
   .portfolio-photo {
     width: 55px;
     margin-right: 0.7rem;
@@ -249,7 +304,6 @@ body {
 
   .resume-and-certifications {
     flex-wrap: wrap;
-    justify-content: center;
   }
 }
 

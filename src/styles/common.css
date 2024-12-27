@@ -1,5 +1,6 @@
 /* Body styles for all pages except landing page */
-body:has(.portfolio-content-wrapper) {
+body:has(.portfolio-content-wrapper),
+body:has(.career-experience-wrapper) {
   background-image: linear-gradient(to bottom, var(--blue), var(--slate-blue));
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -15,6 +16,11 @@ h1 {
 h2 {
   font-size: 2.5rem;
   letter-spacing: 1px;
+}
+
+p {
+  font-size: 2rem;
+  letter-spacing: 0.01rem;
 }
 
 a {
@@ -41,10 +47,12 @@ a:focus {
 
 /* Wrapper styles for all pages */
 .main-content-wrapper,
-.portfolio-content {
+.portfolio-content,
+.career-experience-content {
   width: 85%;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  overflow: hidden;
 }
 
 .menu-wrapper {
@@ -83,6 +91,12 @@ a:focus {
   margin-bottom: 0.5rem;
 }
 
+/* Icons */
+.fa-solid {
+  font-size: 1.3rem;
+  margin-right: 1.2rem;
+}
+
 /* Media queries */
 @media only screen and (max-width: 900px) {
   h1 {
@@ -92,6 +106,10 @@ a:focus {
   h2 {
     font-size: 2rem;
     letter-spacing: 1px;
+  }
+
+  p {
+    font-size: 1.5rem;
   }
 
   .drop-down-nav {
@@ -105,12 +123,18 @@ a:focus {
 
 @media only screen and (max-width: 600px) {
   h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   h2 {
     font-size: 1.3rem;
     letter-spacing: 1px;
+  }
+
+  p {
+    font-size: 1.2rem;
+    letter-spacing: 0.02rem;
+    line-height: 25px;
   }
 
   .drop-down-nav {

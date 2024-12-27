@@ -7,8 +7,8 @@
 .window {
   height: 400px;
   width: 300px;
-  border: 25px solid var(--blue);
-  border-radius: 40%;
+  border: 20px solid var(--blue);
+  border-radius: 45%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,6 +38,7 @@
   position: absolute;
   color: var(--slate-blue);
   background-color: var(--off-white);
+  clip-path: ellipse(185% 100% at top);
   cursor: pointer;
   transition: top 0.8s ease;
 }
@@ -49,12 +50,12 @@
 .shade::before {
   content: '';
   position: absolute;
-  width: 90px;
+  width: 115px;
   height: 10px;
   border-radius: 80%;
   background-color: var(--slate-blue);
   top: 380px;
-  left: 110px;
+  left: 98px;
 }
 
 .shadeText {

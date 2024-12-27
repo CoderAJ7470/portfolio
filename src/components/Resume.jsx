@@ -1,4 +1,3 @@
-import { ArrowTopRightOnSquareIcon } from '@heroicons/react/16/solid';
 import FE_Resume from '../assets/Ameya_Joshi_FE_Dev_Resume.pdf';
 import resumeThumbnail1 from '../assets/res_thumbnail_1.png';
 import resumeThumbnail2 from '../assets/res_thumbnail_2.png';
