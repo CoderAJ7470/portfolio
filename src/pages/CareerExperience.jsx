@@ -83,7 +83,21 @@ const CareerExperience = () => {
               <p>
                 <i className='fa-solid fa-car'></i>I handled varying tasks, from
                 as simple as removing old Java backend code to handling
-                complicated api-driven dynamic data handling
+                complicated api-driven dynamic data handling, with some small
+                frontend tasks sprinkled in
+              </p>
+              <p>
+                <i className='fa-solid fa-car'></i>I did get a chance to do some
+                more "involved" frontend work towards the end of the project,
+                which looked simple on paper but was made more complex because
+                of the structure of the code - adding a link in the footer. This
+                was to be done on multiple pages and across several "verticals"
+                in the monorepo. Eventually, this involved many colleagues
+                working across several verticals at the same time, and the lead
+                developer had me lead the initiative, keeping track of which
+                vertical's footer had the link and which still needed it. While
+                nothing earth-shattering, it was a good first experience in
+                collaboration and communication across different teams.
               </p>
             </div>
           </section>
@@ -162,9 +176,9 @@ const CareerExperience = () => {
                 Accessibility Guidelines (WCAG)
               </p>
               <p>
-                <i className='fa-solid fa-dollar-sign'></i>
-                Learned about and used semantic HTML, ARIA attributes, the
-                browser WAVE Tool extension and the WCAG color contrast checker
+                <i className='fa-solid fa-dollar-sign'></i>I learned and used
+                semantic HTML, ARIA attributes, the browser WAVE Tool extension
+                and the WCAG color contrast checker
               </p>
               <p>
                 <i className='fa-solid fa-dollar-sign'></i>
@@ -193,8 +207,8 @@ const CareerExperience = () => {
               </p>
               <p>
                 <i className='fa-solid fa-car-side'></i>
-                The original app had some fundamental issues which I helped
-                resolve intially after joining the project team
+                The original app had some fundamental issues and bugs which I
+                helped resolve intially after joining the project team
               </p>
               <p>
                 <i className='fa-solid fa-car-side'></i>I worked with both, the
@@ -207,22 +221,80 @@ const CareerExperience = () => {
                 as sending/receiving text messages and showing conversations, to
                 more complex ones like populating filtered API data in search
                 results, searching for closed conversations or showing
-                conversation history for a particular rental code
+                conversation history for a particular rental or reservation
               </p>
               <p>
                 <i className='fa-solid fa-car-side'></i>
-                The tech stack was once again React and TypeScript, but the
+                The tech stack once again included React and TypeScript, but the
                 project also had an AWS environment which was tied into backend
                 lambdas. From time to time, I paired up with backend team
-                colleagues to help with timeline-driven tasks, which involved
-                querying data with Splunk and/or Postman, and also conducting
-                specialized searches in AWS
+                colleagues to help with timeline-driven tasks or fix bugs, which
+                involved querying data with Splunk and/or Postman, and also
+                conducting specialized searches in AWS
               </p>
               <p>
                 <i className='fa-solid fa-car-side'></i>I also worked on
                 implementing accessibility and translations in the app, using my
                 experience gained in both areas from the previous two client
                 projects
+              </p>
+            </div>
+          </section>
+
+          <button
+            className='section-buttons'
+            onClick={handleSectionOnClick}
+            onFocus={handleSectionOnFocus}
+            onBlur={handleSectionOnBlur}
+          >
+            Internal Project
+          </button>
+          <section className='expandable'>
+            <div className='inner'>
+              <p>
+                <i className='fa-solid fa-car-side'></i>
+                This internal project was to create a new total cost of
+                ownership calculator, which would be deployed directly on the
+                Sparq (then Rural Sourcing) website. The main aim of the
+                calculator was to allow RSI's clients to take a look at the
+                total cost of doing business with RSI as compared to
+                outsourcing. This was also viewable by geographic region/country
+                on a world map, for which we used a third-party package and
+                integrated it into the app
+              </p>
+              <p>
+                <i className='fa-solid fa-car-side'></i>
+                This was actually my first frontend project at RSI (now Sparq)
+                involving heavy usage of React, along with JavaScript.
+              </p>
+              <p>
+                <i className='fa-solid fa-car-side'></i>I learned quite a bit of
+                new things on this project, as a lot of calculations were
+                required (this was a total cost of ownership calculator after
+                all), and the importance of having typed variables, either with
+                TypeScript, or at least prop types. We also used Redux for state
+                management, and APIs to bring in backend data.
+              </p>
+              <p>
+                <i className='fa-solid fa-car-side'></i>
+                My work involved creating custom components to show
+                visualizations and data in the UI, and custom modals to allow
+                the user to make calculations based on specific criteria, which
+                they could select in the modal's form
+              </p>
+              <p>
+                <i className='fa-solid fa-car-side'></i>
+                The results from the modal calculations were viewable on the
+                world maps by country, allowing the end-user to see the exact
+                cost of doing business with RSI (now Sparq) vs. doing business
+                in other countries
+              </p>
+              <p>
+                <i className='fa-solid fa-car-side'></i>
+                The app was well-received by both company leadershp and clients,
+                since it allowed the end-user to get a comprehensive view and
+                understanding of the costs involved, and how much money the
+                client would save if they signed up with RSI.
               </p>
             </div>
           </section>

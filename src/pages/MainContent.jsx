@@ -18,7 +18,7 @@ const Main = () => {
         />
 
         <p className='main-content-wrapper-p'>
-          I'm <b>Ameya Joshi&nbsp;</b>, a Frontend/React developer based in the
+          I'm <b>Ameya Joshi</b>,&nbsp;a Frontend/React developer based in the
           Oklahoma City metro area, with 5+ years of professional experience
           that includes <b>React</b> and <b>TypeScript</b>. I enjoy web
           development, am an avid aviation enthusiast and have a Meteorology

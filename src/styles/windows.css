@@ -38,7 +38,6 @@
   position: absolute;
   color: var(--slate-blue);
   background-color: var(--off-white);
-  clip-path: ellipse(185% 100% at top);
   cursor: pointer;
   transition: top 0.8s ease;
 }
@@ -62,6 +61,12 @@
   width: 90%;
   text-align: center;
   font-size: 2rem;
+}
+
+@media only screen and (min-width: 1400px) {
+  .shade {
+    clip-path: ellipse(185% 100% at top);
+  }
 }
 
 /* Media queries */
@@ -89,6 +94,9 @@
     left: 94px;
     border-radius: 40%;
   }
+}
+
+@media only screen and (min-width: 900px) {
 }
 
 @media only screen and (max-width: 1100px) {
