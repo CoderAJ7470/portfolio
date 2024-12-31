@@ -69,7 +69,7 @@ body {
 .portfolio-photo {
   border: 2px solid var(--blue);
   border-radius: 50%;
-  width: 80px;
+  width: 70px;
   padding: 2px;
   margin-right: 1.5rem;
 }
@@ -166,7 +166,7 @@ body {
 }
 
 .section-buttons::after {
-  content: '\2303';
+  content: '\2304';
   float: right;
   margin-left: 1rem;
   position: absolute;
@@ -174,7 +174,7 @@ body {
 }
 
 .button-selected::after {
-  transform: rotate(180deg);
+  transform: rotate(-180deg);
 }
 
 .expandable {
@@ -197,6 +197,19 @@ body {
 }
 
 /* Outside of work */
+.hobbies-content-wrapper {
+  color: var(--blue);
+  background-color: #fff;
+  padding: 1rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  border-radius: 2rem;
+}
+
+.hobbies-content-wrapper p {
+  margin-top: 0.5rem;
+}
+
 .hobbies-list-links {
   color: black;
   font-size: 1.5rem;

@@ -252,45 +252,46 @@ const CareerExperience = () => {
           <section className='expandable'>
             <div className='inner'>
               <p>
-                <i className='fa-solid fa-car-side'></i>
+                <i className='fa-solid fa-file-invoice-dollar'></i>
                 This internal project was to create a new total cost of
                 ownership calculator, which would be deployed directly on the
-                Sparq (then Rural Sourcing) website. The main aim of the
-                calculator was to allow RSI's clients to take a look at the
-                total cost of doing business with RSI as compared to
+                Sparq (then Rural Sourcing Incorporated) website. The main aim
+                of the calculator was to allow RSI's clients to take a look at
+                the total cost of doing business with RSI as compared to
                 outsourcing. This was also viewable by geographic region/country
                 on a world map, for which we used a third-party package and
                 integrated it into the app
               </p>
               <p>
-                <i className='fa-solid fa-car-side'></i>
+                <i className='fa-solid fa-file-invoice-dollar'></i>
                 This was actually my first frontend project at RSI (now Sparq)
                 involving heavy usage of React, along with JavaScript.
               </p>
               <p>
-                <i className='fa-solid fa-car-side'></i>I learned quite a bit of
-                new things on this project, as a lot of calculations were
-                required (this was a total cost of ownership calculator after
-                all), and the importance of having typed variables, either with
-                TypeScript, or at least prop types. We also used Redux for state
-                management, and APIs to bring in backend data.
+                <i className='fa-solid fa-file-invoice-dollar'></i>I learned
+                quite a bit of new things on this project, as a lot of
+                calculations were required (this was a total cost of ownership
+                calculator after all), and the importance of having typed
+                variables, either with TypeScript, or at least prop types. We
+                also used Redux for state management, and APIs to bring in
+                backend data.
               </p>
               <p>
-                <i className='fa-solid fa-car-side'></i>
+                <i className='fa-solid fa-file-invoice-dollar'></i>
                 My work involved creating custom components to show
                 visualizations and data in the UI, and custom modals to allow
                 the user to make calculations based on specific criteria, which
                 they could select in the modal's form
               </p>
               <p>
-                <i className='fa-solid fa-car-side'></i>
+                <i className='fa-solid fa-file-invoice-dollar'></i>
                 The results from the modal calculations were viewable on the
                 world maps by country, allowing the end-user to see the exact
                 cost of doing business with RSI (now Sparq) vs. doing business
                 in other countries
               </p>
               <p>
-                <i className='fa-solid fa-car-side'></i>
+                <i className='fa-solid fa-file-invoice-dollar'></i>
                 The app was well-received by both company leadershp and clients,
                 since it allowed the end-user to get a comprehensive view and
                 understanding of the costs involved, and how much money the
