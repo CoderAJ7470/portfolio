@@ -2,13 +2,13 @@ import { useState } from 'react';
 import { Link } from 'react-router';
 
 const Menu = ({ home, portfolio, experience, outsideWork }) => {
-  const [isNavOpen, setIsNavopen] = useState(false);
+  const [isNavOpen, setIsNavOpen] = useState(false);
 
   const handleNavOnClick = () => {
     const navigation = document.getElementById('slidingNav');
 
     navigation.classList.toggle('nav-visible');
-    setIsNavopen(!isNavOpen);
+    setIsNavOpen(!isNavOpen);
   };
 
   const handleOnKeyDown = (e) => {
