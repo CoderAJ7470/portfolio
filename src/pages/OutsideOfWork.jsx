@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import Header from '../components/Header';
+import Slider from '../components/Slider';
 
 import '../styles/portfolio.css';
 import '../styles/common.css';
@@ -40,25 +41,26 @@ const OutsideOfWork = () => {
             </li>
             <li>
               <b>Playing Euro Truck Simulator 2 and American Truck Simulator</b>
-              ; fun fact (as if the rest of these are not fun facts already) -
-              I've played ETS2 since 2014, and now have 165 drivers in my
-              company (including myself), a few more trucks than that number as
-              well as some company-owned trailers. And did I mention the EUR
-              274+ million in the company bank? Of course, the company is still
-              growing
+              ; fun fact (as if the rest of these are not fun facts already
+              &#128521;) - I've played ETS2 since 2014, and now have 165 drivers
+              in my company (including myself), a few more trucks than that
+              number as well as some company-owned trailers. And did I mention
+              the EUR 277+ million in the company bank? Of course, the company
+              is still growing
             </li>
             <li>
               <b>Aviation</b> is a big hobby of mine (the&nbsp;
               <Link to='/' className='hobbies-list-links'>
                 home page
               </Link>
-              &nbsp;is a definite indicator). I read a lot of aviation-related
-              stuff on the web, play a freeware flight sim (it's from the '90s
-              but still has a decent player base), keep up with the aviation
-              industry (you know, things like which airlines are launching new
-              routes/cancelling them, which of them are ordering aircraft, which
-              airports are building new terminals or expanding existing ones,
-              and even the occasional quarterly report of an airline)
+              &nbsp;being a definite indicator &#128521;). I read a lot of
+              aviation-related stuff on the web, play a freeware flight sim
+              (it's from the '90s but still has a decent player base), keep up
+              with the aviation industry (you know, things like which airlines
+              are launching new routes/cancelling them, which of them are
+              ordering aircraft, which airports are building new terminals or
+              expanding existing ones, and even the occasional quarterly report
+              of an airline)
             </li>
             <li>
               <b>
@@ -94,7 +96,7 @@ const OutsideOfWork = () => {
           </ul>
         </section>
 
-        <section className='photo-carousel-wrapper'>
+        <section className='photo-slides-wrapper'>
           <p>
             Since the early 2000s, I started developing an interest in aviation
             photography (though my liking for aviation goes well back to my
@@ -106,13 +108,13 @@ const OutsideOfWork = () => {
 
           <p>
             These days, I also photograph weather phenomenon around my area, and
-            sometimes, non aviation/weather-related stuff as well. I am still
-            very much an amateur, but do enjoy doing both. If you fancy, below
-            are a few photos I have taken over the years (in no particular
-            order).
+            sometimes, non aviation/non-weather-related stuff as well. I am
+            still very much an amateur, but do enjoy doing both. If you fancy,
+            below is a slider with some of the photos I have taken over the
+            years (in no particular order).
           </p>
 
-          {/* Image slider will go here */}
+          <Slider />
         </section>
       </section>
     </div>

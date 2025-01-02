@@ -146,7 +146,7 @@ body {
   margin-right: auto;
 }
 
-.fa-solid {
+.expandable .inner .fa-solid {
   margin-right: 1.2rem;
 }
 
@@ -225,6 +225,44 @@ body {
 .hobbies-list-links:focus {
   background-size: 100% 2px;
   outline: none;
+}
+
+.slide-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.slide-buttons {
+  border: none;
+  background-color: #fff;
+  font-size: 5rem;
+  color: var(--blue);
+  width: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.button-left {
+  clip-path: ellipse(93.75% 55% at 100% 50%);
+}
+
+.button-right {
+  clip-path: ellipse(93.75% 55% at 0% 50%);
+}
+
+.fa-caret-right {
+  margin-right: 1rem;
+}
+
+.fa-caret-left {
+  margin-left: 1rem;
+}
+
+.slides img {
+  vertical-align: bottom;
 }
 
 /* Media queries */
