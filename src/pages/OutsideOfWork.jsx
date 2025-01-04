@@ -1,16 +1,10 @@
-import { useEffect } from 'react';
 import Header from '../components/Header';
 import Slider from '../components/Slider';
 
 import '../styles/portfolio.css';
 import '../styles/common.css';
-import { Link } from 'react-router';
 
 const OutsideOfWork = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   return (
     <div className='hobbies-wrapper'>
       <section className='hobbies-content'>
@@ -19,7 +13,7 @@ const OutsideOfWork = () => {
             headerClass='hobbies-header'
             hasMenu
             headingAndMenuClass='hobbies-heading-and-menu'
-            heading='Hobbies'
+            heading='Outside of Work'
             home
             portfolio
             experience
@@ -33,8 +27,8 @@ const OutsideOfWork = () => {
 
           <ul>
             <li>
-              <b>Reading</b> - mostly stuff on the web. I still do have a
-              Reader's Digest subscription though
+              <b>Reading</b> - mostly stuff on the web. I still have a Reader's
+              Digest subscription though
             </li>
             <li>
               <b>Riding my bicycle around town</b> when the weather's nice
@@ -50,9 +44,9 @@ const OutsideOfWork = () => {
             </li>
             <li>
               <b>Aviation</b> is a big hobby of mine (the&nbsp;
-              <Link to='/' className='hobbies-list-links'>
+              <a href='/' className='hobbies-list-links'>
                 home page
-              </Link>
+              </a>
               &nbsp;being a definite indicator &#128521;). I read a lot of
               aviation-related stuff on the web, play a freeware flight sim
               (it's from the '90s but still has a decent player base), keep up
@@ -65,9 +59,9 @@ const OutsideOfWork = () => {
             <li>
               <b>
                 As you've read on the&nbsp;
-                <Link to='/' className='hobbies-list-links'>
+                <a href='/' className='hobbies-list-links'>
                   home page
-                </Link>
+                </a>
               </b>
               ,&nbsp; I also have a Bachelor of Science degree in Meteorology
               from the University of Oklahoma, which I received in 2006. I also
@@ -93,10 +87,17 @@ const OutsideOfWork = () => {
               daily outlooks, of course) are the area forecast discussion and
               the SPC's publications
             </li>
+            <li>
+              <b>Coding</b> - Yep, like a lot of developers, I too can't resist
+              a good side project or tutorial to keep me busy and learning new
+              things. And of course, programming has also become my relaxation,
+              if that makes sense...
+            </li>
           </ul>
         </section>
 
         <section className='photo-slides-wrapper'>
+          <h2>Photography</h2>
           <p>
             Since the early 2000s, I started developing an interest in aviation
             photography (though my liking for aviation goes well back to my
@@ -107,11 +108,14 @@ const OutsideOfWork = () => {
           </p>
 
           <p>
-            These days, I also photograph weather phenomenon around my area, and
-            sometimes, non aviation/non-weather-related stuff as well. I am
-            still very much an amateur, but do enjoy doing both. If you fancy,
-            below is a slider with some of the photos I have taken over the
-            years (in no particular order).
+            I've also photographed weather phenomenon, either when I went storm
+            chasing with friends in my Meteorology days, or just around town
+            when weather events have occurred. And sometimes, I photograph
+            non-aviation/non-weather-related stuff as well. I am still very much
+            an amateur, but enjoy it all. If you fancy, below is an image viewer
+            with some of the photos I have taken over the years (in no
+            particular order). You can click on each one to view the full-size
+            version.
           </p>
 
           <Slider />

@@ -33,24 +33,24 @@ const Menu = ({ home, portfolio, experience, outsideWork }) => {
 
       <nav className='drop-down-nav' id='slidingNav'>
         {home && (
-          <Link to='/' tabIndex={isNavOpen ? 0 : -1}>
+          <a href='/' tabIndex={isNavOpen ? 0 : -1}>
             Landing Page
-          </Link>
+          </a>
         )}
         {portfolio && (
-          <Link to='/portfolio' tabIndex={isNavOpen ? 0 : -1}>
+          <a href='/portfolio' tabIndex={isNavOpen ? 0 : -1}>
             Portfolio
-          </Link>
+          </a>
         )}
         {experience && (
-          <Link to='/experience' tabIndex={isNavOpen ? 0 : -1}>
+          <a href='/experience' tabIndex={isNavOpen ? 0 : -1}>
             Career Experience
-          </Link>
+          </a>
         )}
         {outsideWork && (
-          <Link to='/outside-work' tabIndex={isNavOpen ? 0 : -1}>
+          <a href='/outside-work' tabIndex={isNavOpen ? 0 : -1}>
             Hobbies
-          </Link>
+          </a>
         )}
       </nav>
     </section>

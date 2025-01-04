@@ -215,16 +215,6 @@ body {
   font-size: 1.5rem;
   font-weight: 500;
   background-image: linear-gradient(black, black);
-  background-position: 0% 100%;
-  background-repeat: no-repeat;
-  background-size: 0% 2px;
-  transition: background-size 0.3s;
-}
-
-.hobbies-list-links:hover,
-.hobbies-list-links:focus {
-  background-size: 100% 2px;
-  outline: none;
 }
 
 .slide-container {

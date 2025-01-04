@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import test_photo from '../assets/slide_show_photos/split-scimitar-slide.jpg';
-import test_photo_full from '../assets/slide_show_photos/split-scimitar-full.jpg';
+import test_photo_full from '../assets/slide_show_photos/full_size_photos/split-scimitar-full.jpg';
 
 const Slider = () => {
   const [slideIndex, setSlideIndex] = useState(0);

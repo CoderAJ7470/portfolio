@@ -1,12 +1,7 @@
-import { useEffect } from 'react';
 import Header from '../components/Header';
 import Windows from '../components/Windows';
 
 const Main = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   return (
     <div className='main-content-wrapper'>
       <section className='main-content'>

@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react';
 import Header from '../components/Header';
 import Resume from '../components/Resume';
 import googleCDLBadge from '../assets/cdl_certification.png';
@@ -7,10 +6,6 @@ import '../styles/portfolio.css';
 import '../styles/common.css';
 
 const FE_Portfolio = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   return (
     <div className='portfolio-content-wrapper'>
       <section className='portfolio-content'>

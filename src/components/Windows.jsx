@@ -1,5 +1,3 @@
-import { Link } from 'react-router';
-
 import '../styles/windows.css';
 
 const Windows = () => {
@@ -51,7 +49,7 @@ const Windows = () => {
           </p>
         </div>
         <div className='window-links'>
-          <Link to='/portfolio'>See my resume and skills</Link>
+          <a href='/portfolio'>See my resume and skills</a>
         </div>
       </div>
       <div
@@ -75,7 +73,7 @@ const Windows = () => {
           </p>
         </div>
         <div className='window-links'>
-          <Link to='/experience'>Key career experiences</Link>
+          <a href='/experience'>Key career experiences</a>
         </div>
       </div>
       <div
@@ -99,7 +97,7 @@ const Windows = () => {
           </p>
         </div>
         <div className='window-links'>
-          <Link to='/outside-work'>My hobbies and other things</Link>
+          <a href='/outside-work'>My hobbies and other things</a>
         </div>
       </div>
     </section>
