@@ -1,20 +1,43 @@
 import { useState } from 'react';
 
-import test_photo from '../assets/slide_show_photos/split-scimitar-slide.jpg';
-import test_photo_full from '../assets/slide_show_photos/full_size_photos/split-scimitar-full.jpg';
+import { slidesArray } from '../helpers/PhotoVault';
 
 const Slider = () => {
   const [slideIndex, setSlideIndex] = useState(0);
 
+  const handleOnClickPrevious = () => {
+    if (slideIndex === 0) {
+      setSlideIndex(slidesArray.length - 1);
+    } else {
+      setSlideIndex(slideIndex - 1);
+    }
+  };
+
+  const handleOnClickNext = () => {
+    if (slideIndex === slidesArray.length - 1) {
+      setSlideIndex(0);
+    } else {
+      setSlideIndex(slideIndex + 1);
+    }
+  };
+
   return (
     <section className='slide-container'>
-      <button className='slide-buttons button-left' id='previousPhotoButton'>
+      <button
+        className='slide-buttons button-left'
+        id='previousPhotoButton'
+        onClick={handleOnClickPrevious}
+      >
         <i className='fa-solid fa-caret-left'></i>
       </button>
-      <a href={test_photo_full} className='slides'>
-        <img src={test_photo} alt='test photo' />
+      <a href={slidesArray[slideIndex].fullSize} className='slides'>
+        <img src={slidesArray[slideIndex].slide} alt='slide' />
       </a>
-      <button className='slide-buttons button-right' id='nextPhotoButton'>
+      <button
+        className='slide-buttons button-right'
+        id='nextPhotoButton'
+        onClick={handleOnClickNext}
+      >
         <i className='fa-solid fa-caret-right'></i>
       </button>
     </section>
