@@ -35,16 +35,16 @@ import slideTwelve from '../assets/slide_show_photos/tornado_slide.jpg';
 import slideTwelveFull from '../assets/slide_show_photos/full-size/tornado.jpg';
 
 export const slidesArray = [
-  { slide: slideOne, fullSize: slideOneFull },
-  { slide: slideTwo, fullSize: slideTwoFull },
-  { slide: slideThree, fullSize: slideThreeFull },
-  { slide: slideFour, fullSize: slideFourFull },
-  { slide: slideFive, fullSize: slideFiveFull },
-  { slide: slideSix, fullSize: slideSixFull },
-  { slide: slideSeven, fullSize: slideSevenFull },
-  { slide: slideEight, fullSize: slideEightFull },
-  { slide: slideNine, fullSize: slideNineFull },
-  { slide: slideTen, fullSize: slideTenFull },
-  { slide: slideEleven, fullSize: slideElevenFull },
-  { slide: slideTwelve, fullSize: slideTwelveFull },
+  { slide: slideOne, fullSize: slideOneFull, key: 'photo1' },
+  { slide: slideTwo, fullSize: slideTwoFull, key: 'photo2' },
+  { slide: slideThree, fullSize: slideThreeFull, key: 'photo3' },
+  { slide: slideFour, fullSize: slideFourFull, key: 'photo4' },
+  { slide: slideFive, fullSize: slideFiveFull, key: 'photo5' },
+  { slide: slideSix, fullSize: slideSixFull, key: 'photo6' },
+  { slide: slideSeven, fullSize: slideSevenFull, key: 'photo7' },
+  { slide: slideEight, fullSize: slideEightFull, key: 'photo8' },
+  { slide: slideNine, fullSize: slideNineFull, key: 'photo9' },
+  { slide: slideTen, fullSize: slideTenFull, key: 'photo10' },
+  { slide: slideEleven, fullSize: slideElevenFull, key: 'photo11' },
+  { slide: slideTwelve, fullSize: slideTwelveFull, key: 'photo12' },
 ];

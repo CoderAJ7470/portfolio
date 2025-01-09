@@ -64,8 +64,8 @@ const OutsideOfWork = () => {
                 </a>
               </b>
               ,&nbsp; I also have a Bachelor of Science degree in Meteorology
-              from the University of Oklahoma, which I received in 2006. I also
-              try to keep up with latest happenings in Meteorology, though to a
+              from the University of Oklahoma, which I received in 2006. I try
+              to keep up with latest happenings in Meteorology, though to a
               lesser extent than in aviation. A few of the weather-related
               websites I visit include the local&nbsp;
               <a
@@ -85,13 +85,14 @@ const OutsideOfWork = () => {
               </a>
               . Usually what I read on these sites (other than the forecasts and
               daily outlooks, of course) are the area forecast discussion and
-              the SPC's publications
+              the SPC's publications, respectively
             </li>
             <li>
-              <b>Coding</b> - Yep, like a lot of developers, I too can't resist
-              a good side project or tutorial to keep me busy and learning new
-              things. And of course, programming has also become my relaxation,
-              if that makes sense...
+              <b>Coding</b> - Yep, when I'm not typing code, I like to type...
+              code. Like a lot of developers, I too can't resist a good side
+              project or tutorial to keep me busy and learning new things. And
+              of course, programming has also become my relaxation, if that
+              makes sense...
             </li>
           </ul>
         </section>
@@ -115,7 +116,10 @@ const OutsideOfWork = () => {
             an amateur, but enjoy it all. If you fancy, below is an image viewer
             with some of the photos I have taken over the years (in no
             particular order). You can click on each one to view the full-size
-            version.
+            version. These are some of the older ones in 4:3 format, when I had
+            a smaller Panasonic camera. I've also taken many in 16:9 format on
+            my smart phones - I'll share those when I update this viewer to an
+            actual slider. You can call this "version 1".
           </p>
 
           <Slider />
