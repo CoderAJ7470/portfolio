@@ -11,6 +11,7 @@ const Windows = () => {
       // resulting in the window opening and closing so quickly that it
       // looks as if it is not opening at all
       e.stopPropagation();
+      console.log('focused on shade text');
       shadeId = e.target.parentNode.id;
     } else {
       shadeId = e.target.id;
@@ -36,12 +37,12 @@ const Windows = () => {
         <div
           className='shade'
           id='shadeOne'
-          tabIndex={0}
           onClick={slideShade}
           onKeyDown={handleOnKeyDown}
         >
           <p
             className='shadeText'
+            tabIndex={0}
             onClick={slideShade}
             onKeyDown={handleOnKeyDown}
           >
@@ -60,12 +61,12 @@ const Windows = () => {
         <div
           className='shade'
           id='shadeTwo'
-          tabIndex={0}
           onClick={slideShade}
           onKeyDown={handleOnKeyDown}
         >
           <p
             className='shadeText'
+            tabIndex={0}
             onClick={slideShade}
             onKeyDown={handleOnKeyDown}
           >
@@ -84,12 +85,12 @@ const Windows = () => {
         <div
           className='shade'
           id='shadeThree'
-          tabIndex={0}
           onClick={slideShade}
           onKeyDown={handleOnKeyDown}
         >
           <p
             className='shadeText'
+            tabIndex={0}
             onClick={slideShade}
             onKeyDown={handleOnKeyDown}
           >

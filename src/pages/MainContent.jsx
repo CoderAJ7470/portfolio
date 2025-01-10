@@ -20,9 +20,9 @@ const Main = () => {
           degree as well. I call it the "three-way cloud connection". In keeping
           with that theme are some aircraft-style windows below.&nbsp;
           <span className='mobile-only'>Tap&nbsp;</span>
-          <span className='desktop-only'>Open&nbsp;</span>each window's shade to
-          have a look at my resume, career experience and what I like to do
-          outside of work. Intrigued? Check it out!
+          <span className='desktop-only'>Clicking&nbsp;</span>each window's
+          shade to will reveal links to my resume, career experience and what I
+          like to do outside of work. Intrigued? Check it out!
         </p>
       </section>
       <Windows />

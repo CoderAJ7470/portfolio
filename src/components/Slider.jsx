@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import { slidesArray } from '../helpers/PhotoVault';
 
@@ -21,6 +21,18 @@ const Slider = () => {
     }
   };
 
+  useEffect(() => {
+    if (window.localStorage.length !== 0) {
+      const index = JSON.parse(window.localStorage.getItem('slideIndex'));
+
+      setSlideIndex(index);
+    }
+  }, []);
+
+  useEffect(() => {
+    window.localStorage.setItem('slideIndex', slideIndex);
+  }, [slideIndex]);
+
   return (
     <section className='slide-container'>
       <button
@@ -30,8 +42,11 @@ const Slider = () => {
       >
         <i className='fa-solid fa-caret-left'></i>
       </button>
-      <a href={slidesArray[slideIndex].fullSize} className='slides'>
-        <img src={slidesArray[slideIndex].slide} alt='slide' />
+      <a
+        href={slidesArray && slidesArray[slideIndex].fullSize}
+        className='slides'
+      >
+        <img src={slidesArray && slidesArray[slideIndex].slide} alt='slide' />
       </a>
       <button
         className='slide-buttons button-right'

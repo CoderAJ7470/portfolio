@@ -35,16 +35,76 @@ import slideTwelve from '../assets/slide_show_photos/tornado_slide.jpg';
 import slideTwelveFull from '../assets/slide_show_photos/full-size/tornado.jpg';
 
 export const slidesArray = [
-  { slide: slideOne, fullSize: slideOneFull, key: 'photo1' },
-  { slide: slideTwo, fullSize: slideTwoFull, key: 'photo2' },
-  { slide: slideThree, fullSize: slideThreeFull, key: 'photo3' },
-  { slide: slideFour, fullSize: slideFourFull, key: 'photo4' },
-  { slide: slideFive, fullSize: slideFiveFull, key: 'photo5' },
-  { slide: slideSix, fullSize: slideSixFull, key: 'photo6' },
-  { slide: slideSeven, fullSize: slideSevenFull, key: 'photo7' },
-  { slide: slideEight, fullSize: slideEightFull, key: 'photo8' },
-  { slide: slideNine, fullSize: slideNineFull, key: 'photo9' },
-  { slide: slideTen, fullSize: slideTenFull, key: 'photo10' },
-  { slide: slideEleven, fullSize: slideElevenFull, key: 'photo11' },
-  { slide: slideTwelve, fullSize: slideTwelveFull, key: 'photo12' },
+  {
+    slide: slideOne,
+    fullSize: slideOneFull,
+    alt: 'BA 747-400 RB 211 engines',
+    key: 'photo1',
+  },
+  {
+    slide: slideTwo,
+    fullSize: slideTwoFull,
+    alt: 'United 737-800 getting deiced',
+    key: 'photo2',
+  },
+  {
+    slide: slideThree,
+    fullSize: slideThreeFull,
+    alt: 'Devon Energy Center in Oklahoma City',
+    key: 'photo3',
+  },
+  {
+    slide: slideFour,
+    fullSize: slideFourFull,
+    alt: 'Overview of DFW Airport',
+    key: 'photo4',
+  },
+  {
+    slide: slideFive,
+    fullSize: slideFiveFull,
+    alt: 'Downtown Oklahoma City overview',
+    key: 'photo5',
+  },
+  {
+    slide: slideSix,
+    fullSize: slideSixFull,
+    alt: 'Blue Angels at the 2007 Wichita airshow',
+    key: 'photo6',
+  },
+  {
+    slide: slideSeven,
+    fullSize: slideSevenFull,
+    alt: 'Lufthansa 747-400 nose view',
+    key: 'photo7',
+  },
+  {
+    slide: slideEight,
+    fullSize: slideEightFull,
+    alt: 'United 737-800 with split scimitar winglets',
+    key: 'photo8',
+  },
+  {
+    slide: slideNine,
+    fullSize: slideNineFull,
+    alt: 'Photo of a morning sunrise with clouds',
+    key: 'photo9',
+  },
+  {
+    slide: slideTen,
+    fullSize: slideTenFull,
+    alt: 'Photo of a morning sunrise with clouds',
+    key: 'photo10',
+  },
+  {
+    slide: slideEleven,
+    fullSize: slideElevenFull,
+    alt: 'Tails of many aircraft at Frankfurt airport',
+    key: 'photo11',
+  },
+  {
+    slide: slideTwelve,
+    fullSize: slideTwelveFull,
+    alt: 'Multiple-vortex tornado in Oklahoma',
+    key: 'photo12',
+  },
 ];

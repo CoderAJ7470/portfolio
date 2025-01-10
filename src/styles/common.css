@@ -88,10 +88,16 @@ a:focus {
 
 .drop-down-nav a {
   color: var(--blue);
-  background-image: linear-gradient(var(--blue), var(--blue));
+  background: none;
   text-decoration: none;
   display: block;
   font-size: 1.8rem;
+  transition: transform 0.4s ease;
+}
+
+.drop-down-nav a:hover,
+.drop-down-nav a:focus {
+  transform: scale(1.05);
 }
 
 .drop-down-nav a:nth-of-type(1),
