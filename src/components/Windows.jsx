@@ -56,7 +56,7 @@ const Windows = () => {
           </p>
         </div>
         <div className='window-links'>
-          <a href='/fe-portfolio'>See my resume and skills</a>
+          <a href='/portfolio/fe-portfolio'>See my resume and skills</a>
         </div>
       </div>
       <div
@@ -81,7 +81,7 @@ const Windows = () => {
           </p>
         </div>
         <div className='window-links'>
-          <a href='/experience'>Key career experiences</a>
+          <a href='/portfolio/experience'>Key career experiences</a>
         </div>
       </div>
       <div
@@ -106,7 +106,7 @@ const Windows = () => {
           </p>
         </div>
         <div className='window-links'>
-          <a href='/outside-work'>My hobbies and other things</a>
+          <a href='/portfolio/outside-work'>My hobbies and other things</a>
         </div>
       </div>
     </section>

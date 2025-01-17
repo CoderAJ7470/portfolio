@@ -9,9 +9,9 @@ import '../src/styles/portfolio.css';
 
 const router = createBrowserRouter([
   { path: '/portfolio', element: <App /> },
-  { path: '/fe-portfolio', element: <FE_Portfolio /> },
-  { path: '/experience', element: <CareerExperience /> },
-  { path: '/outside-work', element: <OutsideOfWork /> },
+  { path: '/portfolio/fe-portfolio', element: <FE_Portfolio /> },
+  { path: '/portfolio/experience', element: <CareerExperience /> },
+  { path: '/portfolio/outside-work', element: <OutsideOfWork /> },
 ]);
 
 createRoot(document.getElementById('root')).render(

@@ -41,22 +41,22 @@ const Menu = ({ home, portfolio, experience, outsideWork }) => {
 
       <nav className='drop-down-nav' id='slidingNav'>
         {home && (
-          <a href='/' tabIndex={isNavOpen ? 0 : -1}>
+          <a href='/portfolio' tabIndex={isNavOpen ? 0 : -1}>
             Landing Page
           </a>
         )}
         {portfolio && (
-          <a href='/fe-portfolio' tabIndex={isNavOpen ? 0 : -1}>
+          <a href='/portfolio/fe-portfolio' tabIndex={isNavOpen ? 0 : -1}>
             Portfolio
           </a>
         )}
         {experience && (
-          <a href='/experience' tabIndex={isNavOpen ? 0 : -1}>
+          <a href='/portfolio/experience' tabIndex={isNavOpen ? 0 : -1}>
             Career Experience
           </a>
         )}
         {outsideWork && (
-          <a href='/outside-work' tabIndex={isNavOpen ? 0 : -1}>
+          <a href='/portfolio/outside-work' tabIndex={isNavOpen ? 0 : -1}>
             Hobbies
           </a>
         )}
