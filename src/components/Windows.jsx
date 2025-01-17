@@ -11,7 +11,6 @@ const Windows = () => {
       // resulting in the window opening and closing so quickly that it
       // looks as if it is not opening at all
       e.stopPropagation();
-      console.log('focused on shade text');
       shadeId = e.target.parentNode.id;
     } else {
       shadeId = e.target.id;
@@ -27,8 +26,14 @@ const Windows = () => {
     }
   };
 
+  const handleOnFocus = () => {
+    document
+      .querySelector('#windowContainer')
+      .scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
-    <section className='windows-container'>
+    <section className='windows-container' id='windowContainer'>
       <div
         role='img'
         className='window'
@@ -45,6 +50,7 @@ const Windows = () => {
             tabIndex={0}
             onClick={slideShade}
             onKeyDown={handleOnKeyDown}
+            onFocus={handleOnFocus}
           >
             Curriculum Vitae and Skills
           </p>
@@ -69,6 +75,7 @@ const Windows = () => {
             tabIndex={0}
             onClick={slideShade}
             onKeyDown={handleOnKeyDown}
+            onFocus={handleOnFocus}
           >
             Career Experience
           </p>
@@ -93,6 +100,7 @@ const Windows = () => {
             tabIndex={0}
             onClick={slideShade}
             onKeyDown={handleOnKeyDown}
+            onFocus={handleOnFocus}
           >
             Outside of Work
           </p>

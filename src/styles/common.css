@@ -86,6 +86,22 @@ a:focus {
   right: 0px;
 }
 
+.bar {
+  transition: transform 0.5s ease;
+}
+
+.animate-down {
+  transform: rotate(45deg) translate(0.9rem, 0.6em);
+}
+
+.fade {
+  transform: scale(0);
+}
+
+.animate-up {
+  transform: rotate(-45deg) translate(0.7em, -0.5em);
+}
+
 .drop-down-nav a {
   color: var(--blue);
   background: none;
@@ -111,6 +127,20 @@ li {
   letter-spacing: 0.02rem;
 }
 
+.list-links {
+  color: var(--blue);
+  font-size: 1.5rem;
+  font-weight: 500;
+  background-image: linear-gradient(var(--blue), var(--blue));
+  letter-spacing: 0.02rem;
+}
+
+.list-links .fa-solid {
+  font-size: 0.8rem;
+  vertical-align: top;
+  margin-left: 0.3rem;
+}
+
 /* Media queries */
 @media only screen and (max-width: 900px) {
   h1 {
@@ -120,6 +150,10 @@ li {
   h2 {
     font-size: 2rem;
     letter-spacing: 1px;
+  }
+
+  h3 {
+    font-size: 1.7rem;
   }
 
   p {
@@ -133,6 +167,22 @@ li {
   .drop-down-nav a {
     font-size: 1.5rem;
   }
+
+  li {
+    font-size: 1.3rem;
+  }
+
+  .list-links {
+    font-size: 1.3rem;
+  }
+
+  .animate-down {
+    transform: rotate(45deg) translate(0.5em, 0.6em);
+  }
+
+  .animate-up {
+    transform: rotate(-45deg) translate(0.3em, -0.6em);
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -141,8 +191,12 @@ li {
   }
 
   h2 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     letter-spacing: 1px;
+  }
+
+  h3 {
+    font-size: 1.4rem;
   }
 
   p {
@@ -152,7 +206,7 @@ li {
   }
 
   .drop-down-nav {
-    top: 30px;
+    top: 40px;
     z-index: 1;
   }
 
@@ -169,8 +223,28 @@ li {
     font-size: 1.2rem;
   }
 
+  .list-links {
+    font-size: 1.2rem;
+  }
+
+  .list-links .fa-solid {
+    font-size: 0.6rem;
+  }
+
   .resume p,
   .cdl-certification p {
     font-size: 1rem;
+  }
+
+  .menu-icon {
+    margin-top: 0.4rem;
+  }
+
+  .animate-down {
+    transform: rotate(45deg) translate(0.5em, 0.3em);
+  }
+
+  .animate-up {
+    transform: rotate(-45deg) translate(0.4em, -0.2em);
   }
 }

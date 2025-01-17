@@ -39,6 +39,7 @@ const Slider = () => {
         className='slide-buttons button-left'
         id='previousPhotoButton'
         onClick={handleOnClickPrevious}
+        aria-label='Click this button to show the previous image'
       >
         <i className='fa-solid fa-caret-left'></i>
       </button>
@@ -52,6 +53,7 @@ const Slider = () => {
         className='slide-buttons button-right'
         id='nextPhotoButton'
         onClick={handleOnClickNext}
+        aria-label='Click this button to show the next image'
       >
         <i className='fa-solid fa-caret-right'></i>
       </button>

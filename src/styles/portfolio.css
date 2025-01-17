@@ -126,6 +126,12 @@ body {
   margin-top: 0;
 }
 
+.current-learning {
+  color: #333;
+  background-color: #fff;
+  width: fit-content;
+}
+
 /* Career experience */
 .experience-content-wrapper {
   margin-top: 1rem;
@@ -198,7 +204,7 @@ body {
 
 /* Outside of work */
 .hobbies-content-wrapper {
-  color: var(--blue);
+  color: #333;
   background-color: #fff;
   padding: 1rem;
   margin-bottom: 3rem;
@@ -208,13 +214,6 @@ body {
 
 .hobbies-content-wrapper p {
   margin-top: 0.5rem;
-}
-
-.hobbies-list-links {
-  color: black;
-  font-size: 1.5rem;
-  font-weight: 500;
-  background-image: linear-gradient(black, black);
 }
 
 .slide-container {
@@ -273,6 +272,18 @@ body {
     margin-bottom: 0.4rem;
   }
 
+  .current-learning {
+    padding: 1rem 2rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    border-radius: 2rem;
+  }
+
+  .current-learning h3 {
+    margin-top: 0.5rem;
+    font-weight: 500;
+  }
+
   .section-buttons::after {
     right: 10px;
   }
@@ -309,6 +320,13 @@ body {
   .bar:nth-of-type(1),
   .bar:nth-of-type(2) {
     margin-bottom: 0.5rem;
+  }
+
+  .current-learning {
+    padding: 1rem 2rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    border-radius: 2rem;
   }
 
   .accordion-wrapper {
@@ -352,6 +370,13 @@ body {
   .bar:nth-of-type(1),
   .bar:nth-of-type(2) {
     margin-bottom: 0.75rem;
+  }
+
+  .current-learning {
+    padding: 1rem 2rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    border-radius: 2rem;
   }
 
   .section-buttons::after {

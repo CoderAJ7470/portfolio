@@ -91,12 +91,12 @@ const CareerExperience = () => {
                 more "involved" frontend work towards the end of the project,
                 which looked simple on paper but was made more complex because
                 of the structure of the code - adding a link in the footer. This
-                was to be done on multiple pages and across several "verticals"
-                in the monorepo. Eventually, this involved many colleagues
-                working across several verticals at the same time, and the lead
-                developer had me lead the initiative, keeping track of which
-                vertical's footer had the link and which still needed it. While
-                nothing earth-shattering, it was a good first experience in
+                was to be done on multiple pages in the monorepo. Eventually,
+                this involved many colleagues working across several pages at
+                the same time, and the lead developer on the Sparq team put me
+                in charge of the footer changes, keeping track of which page's
+                footer had the link and which still needed it. While nothing
+                earth-shattering, it was a good first experience in
                 collaboration and communication across different teams.
               </p>
             </div>
@@ -136,7 +136,6 @@ const CareerExperience = () => {
                 improving Outlook email templates, where I introduced dynamic
                 content like names and dates; also worked extensively on
                 enabling translations throughout the app for Spanish and French
-                while I was on the project
               </p>
               <p>
                 <i className='fa-solid fa-chart-line'></i>
@@ -201,19 +200,23 @@ const CareerExperience = () => {
               <p>
                 <i className='fa-solid fa-car-side'></i>
                 This project's main goal was to help the client build a new
-                SMS-based app, with which the client's agents can communicate
-                with customers and help them with the rental process simply
-                through texts
+                SMS-based app. Using the app, the client's rental agents are
+                able to communicate with their customers solely through texts
+                for car and truck rentals
               </p>
               <p>
                 <i className='fa-solid fa-car-side'></i>
                 The original app had some fundamental issues and bugs which I
-                helped resolve intially after joining the project team
+                helped resolve intially after joining the project team. Once
+                again, the tech stack on this project included React and
+                TypeScript, giving me further experience with both. On the
+                backend, we had APIs, NodeJS and custom lambdas written in
+                JavaScript, as well as an AWS environment
               </p>
               <p>
                 <i className='fa-solid fa-car-side'></i>I worked with both, the
                 frontend and backend teams on the Sparq and client side to help
-                build out the app's features and improve existing code as well
+                build out the app's features and improve existing code
               </p>
               <p>
                 <i className='fa-solid fa-car-side'></i>
@@ -225,18 +228,17 @@ const CareerExperience = () => {
               </p>
               <p>
                 <i className='fa-solid fa-car-side'></i>
-                The tech stack once again included React and TypeScript, but the
-                project also had an AWS environment which was tied into backend
-                lambdas. From time to time, I paired up with backend team
-                colleagues to help with timeline-driven tasks or fix bugs, which
-                involved querying data with Splunk and/or Postman, and also
-                conducting specialized searches in AWS
+                From time to time, I paired up with backend team colleagues to
+                help with timeline-driven tasks or fix bugs, which involved
+                querying data with Splunk and/or Postman, and also conducting
+                specialized searches in AWS. Occasionally, I also helped the QA
+                team with its own tasks when time was on the short side
               </p>
               <p>
-                <i className='fa-solid fa-car-side'></i>I also worked on
-                implementing accessibility and translations in the app, using my
-                experience gained in both areas from the previous two client
-                projects
+                <i className='fa-solid fa-car-side'></i>In addition to all that,
+                I also worked on implementing accessibility and translations in
+                the app, using my experience gained in both areas from the
+                previous two client projects
               </p>
             </div>
           </section>

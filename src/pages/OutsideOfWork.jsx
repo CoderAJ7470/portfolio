@@ -44,7 +44,7 @@ const OutsideOfWork = () => {
             </li>
             <li>
               <b>Aviation</b> is a big hobby of mine (the&nbsp;
-              <a href='/' className='hobbies-list-links'>
+              <a href='/' className='list-links'>
                 home page
               </a>
               &nbsp;being a definite indicator &#128521;). I read a lot of
@@ -59,7 +59,7 @@ const OutsideOfWork = () => {
             <li>
               <b>
                 As you've read on the&nbsp;
-                <a href='/' className='hobbies-list-links'>
+                <a href='/' className='list-links'>
                   home page
                 </a>
               </b>
@@ -69,19 +69,21 @@ const OutsideOfWork = () => {
               lesser extent than in aviation. A few of the weather-related
               websites I visit include the local&nbsp;
               <a
-                className='hobbies-list-links'
+                className='list-links'
                 href='https://www.weather.gov/oun/'
                 target='_blank'
               >
                 National Weather Service forecast office
+                <i className='fa-solid fa-up-right-from-square'></i>
               </a>
               &nbsp;and the&nbsp;
               <a
-                className='hobbies-list-links'
+                className='list-links'
                 href='https://www.spc.noaa.gov/'
                 target='_blank'
               >
                 Storm Prediction Center (SPC)
+                <i className='fa-solid fa-up-right-from-square'></i>
               </a>
               . Usually what I read on these sites (other than the forecasts and
               daily outlooks, of course) are the area forecast discussion and
@@ -118,8 +120,8 @@ const OutsideOfWork = () => {
             particular order). You can click on each one to view the full-size
             version. These are some of the older ones in 4:3 format, when I had
             a smaller Panasonic camera. I've also taken many in 16:9 format on
-            my smart phones - I'll share those when I update this viewer to an
-            actual slider. You can call this "version 1".
+            my phone - I'll share those when I update this viewer to an actual
+            slider. You can call this "Version 1".
           </p>
 
           <Slider />

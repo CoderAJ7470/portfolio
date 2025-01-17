@@ -1,13 +1,21 @@
 import { useState } from 'react';
-import { Link } from 'react-router';
 
 const Menu = ({ home, portfolio, experience, outsideWork }) => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   const handleNavOnClick = () => {
-    const navigation = document.getElementById('slidingNav');
+    const navigation = document.querySelector('#slidingNav');
+
+    const firstBar = document.querySelector('#barOne');
+    const secondBar = document.querySelector('#barTwo');
+    const thirdBar = document.querySelector('#barThree');
 
     navigation.classList.toggle('nav-visible');
+
+    firstBar.classList.toggle('animate-down');
+    secondBar.classList.toggle('fade');
+    thirdBar.classList.toggle('animate-up');
+
     setIsNavOpen(!isNavOpen);
   };
 
@@ -26,9 +34,9 @@ const Menu = ({ home, portfolio, experience, outsideWork }) => {
         onKeyDown={handleOnKeyDown}
         tabIndex={0}
       >
-        <div className='bar'></div>
-        <div className='bar'></div>
-        <div className='bar'></div>
+        <div className='bar' id='barOne'></div>
+        <div className='bar' id='barTwo'></div>
+        <div className='bar' id='barThree'></div>
       </section>
 
       <nav className='drop-down-nav' id='slidingNav'>

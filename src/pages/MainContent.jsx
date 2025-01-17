@@ -18,11 +18,9 @@ const Main = () => {
           that includes <b>React</b> and <b>TypeScript</b>. I enjoy web
           development, am an avid aviation enthusiast and have a Meteorology
           degree as well. I call it the "three-way cloud connection". In keeping
-          with that theme are some aircraft-style windows below.&nbsp;
-          <span className='mobile-only'>Tap&nbsp;</span>
-          <span className='desktop-only'>Clicking&nbsp;</span>each window's
-          shade to will reveal links to my resume, career experience and what I
-          like to do outside of work. Intrigued? Check it out!
+          with that theme are some aircraft-style windows below. Open each
+          window's shade to reveal links to my resume, career experience and
+          what I like to do outside of work. Intrigued? Check it out!
         </p>
       </section>
       <Windows />
