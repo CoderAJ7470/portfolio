@@ -56,7 +56,7 @@ const Windows = () => {
           </p>
         </div>
         <div className='window-links'>
-          <a href='/portfolio'>See my resume and skills</a>
+          <a href='/fe-portfolio'>See my resume and skills</a>
         </div>
       </div>
       <div

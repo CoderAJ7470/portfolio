@@ -8,8 +8,8 @@ import FE_Portfolio from './pages/FE_Portfolio.jsx';
 import '../src/styles/portfolio.css';
 
 const router = createBrowserRouter([
-  { path: '/', element: <App /> },
-  { path: '/portfolio', element: <FE_Portfolio /> },
+  { path: '/portfolio', element: <App /> },
+  { path: '/fe-portfolio', element: <FE_Portfolio /> },
   { path: '/experience', element: <CareerExperience /> },
   { path: '/outside-work', element: <OutsideOfWork /> },
 ]);
