@@ -1,9 +1,9 @@
-import Main from './pages/MainContent.jsx';
+import { Outlet } from 'react-router';
 
 function App() {
   return (
     <section className='main-content-container'>
-      <Main />
+      <Outlet />
     </section>
   );
 }

@@ -41,7 +41,7 @@ const Menu = ({ home, portfolio, experience, outsideWork }) => {
 
       <nav className='drop-down-nav' id='slidingNav'>
         {home && (
-          <a href='/portfolio' tabIndex={isNavOpen ? 0 : -1}>
+          <a href='/portfolio/' tabIndex={isNavOpen ? 0 : -1}>
             Landing Page
           </a>
         )}

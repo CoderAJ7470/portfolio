@@ -82,6 +82,10 @@ body {
   align-items: center;
 }
 
+.portfolio-content-wrapper {
+  width: 100%;
+}
+
 .portfolio-content h2 {
   margin-bottom: 1rem;
 }
