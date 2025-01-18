@@ -44,7 +44,7 @@ const OutsideOfWork = () => {
             </li>
             <li>
               <b>Aviation</b> is a big hobby of mine (the&nbsp;
-              <a href='/' className='list-links'>
+              <a href='/portfolio/' className='list-links'>
                 home page
               </a>
               &nbsp;being a definite indicator &#128521;). I read a lot of
@@ -59,7 +59,7 @@ const OutsideOfWork = () => {
             <li>
               <b>
                 As you've read on the&nbsp;
-                <a href='/' className='list-links'>
+                <a href='/portfolio/' className='list-links'>
                   home page
                 </a>
               </b>
