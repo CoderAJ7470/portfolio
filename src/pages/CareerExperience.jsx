@@ -51,10 +51,21 @@ const CareerExperience = () => {
 
         <section className='experience-content-wrapper'>
           <p>
-            At Sparq, I worked on four project teams helping Fortune 1000
-            clients achieve their software goals, as well as an internal
-            project. Below you'll find brief summaries of what I did and skills
-            I picked up on each project.
+            My first frontend developer opportunity was at&nbsp;
+            <a
+              href='https://www.teamsparq.com/'
+              className='non-card-links'
+              target='_blank'
+            >
+              Sparq
+            </a>
+            <i className='fa-solid fa-up-right-from-square'></i>, where I worked
+            from January 2019 through October 2024.
+          </p>
+          <p>
+            There, I worked on four project teams helping Fortune 1000 clients
+            achieve their software goals. Below you'll find brief summaries of
+            what I did and skills I picked up on each project.
           </p>
         </section>
 

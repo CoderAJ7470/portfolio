@@ -141,6 +141,21 @@ li {
   margin-left: 0.3rem;
 }
 
+.non-card-links {
+  font-size: 1.5rem;
+  font-weight: 500;
+  background: none;
+  transition: none;
+  color: var(--off-white);
+  border-bottom: 1px solid var(--off-white);
+}
+
+.fa-up-right-from-square {
+  font-size: 0.8rem;
+  vertical-align: top;
+  margin-left: 0.3rem;
+}
+
 /* Media queries */
 @media only screen and (max-width: 900px) {
   h1 {
@@ -174,6 +189,14 @@ li {
 
   .list-links {
     font-size: 1.3rem;
+  }
+
+  .non-card-links {
+    font-size: 1.3rem;
+  }
+
+  .fa-up-right-from-square {
+    font-size: 0.6rem;
   }
 
   .animate-down {
@@ -227,8 +250,17 @@ li {
     font-size: 1.2rem;
   }
 
+  .non-card-links {
+    font-size: 1.2rem;
+  }
+
   .list-links .fa-solid {
     font-size: 0.6rem;
+  }
+
+  .fa-up-right-from-square {
+    font-size: 0.5rem;
+    margin-top: 0.3rem;
   }
 
   .resume p,

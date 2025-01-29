@@ -52,7 +52,19 @@ const FE_Portfolio = () => {
               Adding translation functionality with react-i18next and ttag
             </li>
             <li>Some experience with NodeJS, Splunk, Postman</li>
-            <li>Writing unit tests with React Testing Library, Jest, Enzyme</li>
+            <li>Unit testing with React Testing Library, Jest, Enzyme</li>
+            <li>Vite - in fact, I created this site with Vite!</li>
+            <li>
+              Redux Toolkit - picked up recently from&nbsp;
+              <a
+                href='https://www.youtube.com/playlist?list=PLC3y8-rFHvwiaOAuTtVXittwybYIorRB3'
+                target='_blank'
+                className='non-card-links'
+              >
+                Codevolution's tutorial
+              </a>
+              <i className='fa-solid fa-up-right-from-square'></i>
+            </li>
           </ul>
         </section>
 
@@ -61,16 +73,6 @@ const FE_Portfolio = () => {
 
           <ul>
             <li>
-              <a
-                href='https://www.youtube.com/playlist?list=PLC3y8-rFHvwiaOAuTtVXittwybYIorRB3'
-                target='_blank'
-                className='list-links'
-              >
-                Redux Toolkit
-                <i className='fa-solid fa-up-right-from-square'></i>
-              </a>
-            </li>
-            <li>
               Improving my understanding of&nbsp;
               <a
                 href='https://www.udemy.com/share/10aMwc/'
@@ -78,6 +80,17 @@ const FE_Portfolio = () => {
                 className='list-links'
               >
                 React unit and E2E testing
+                <i className='fa-solid fa-up-right-from-square'></i>
+              </a>
+            </li>
+            <li>
+              Learning&nbsp;
+              <a
+                href='https://www.youtube.com/playlist?list=PLC3y8-rFHvwhIEc4I4YsRz5C7GOBnxSJY'
+                target='_blank'
+                className='list-links'
+              >
+                NextJS 15
                 <i className='fa-solid fa-up-right-from-square'></i>
               </a>
             </li>
