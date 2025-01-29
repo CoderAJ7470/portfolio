@@ -144,10 +144,7 @@ li {
 .non-card-links {
   font-size: 1.5rem;
   font-weight: 500;
-  background: none;
-  transition: none;
   color: var(--off-white);
-  border-bottom: 1px solid var(--off-white);
 }
 
 .fa-up-right-from-square {

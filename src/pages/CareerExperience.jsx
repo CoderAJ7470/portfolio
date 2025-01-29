@@ -52,11 +52,7 @@ const CareerExperience = () => {
         <section className='experience-content-wrapper'>
           <p>
             My first frontend developer opportunity was at&nbsp;
-            <a
-              href='https://www.teamsparq.com/'
-              className='non-card-links'
-              target='_blank'
-            >
+            <a href='https://www.teamsparq.com/' target='_blank'>
               Sparq
             </a>
             <i className='fa-solid fa-up-right-from-square'></i>, where I worked
