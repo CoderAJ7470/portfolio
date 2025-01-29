@@ -90,7 +90,7 @@ const OutsideOfWork = () => {
               the SPC's publications, respectively
             </li>
             <li>
-              <b>Coding</b> - Yep, when I'm not typing code, I like to type...
+              <b>Coding</b> - Yep, when I'm not writing code, I like to write...
               code. Like a lot of developers, I too can't resist a good side
               project or tutorial to keep me busy and learning new things. And
               of course, programming has also become my relaxation, if that
