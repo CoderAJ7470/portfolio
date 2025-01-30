@@ -59,9 +59,10 @@ const CareerExperience = () => {
             from January 2019 through October 2024.
           </p>
           <p>
-            There, I worked on four project teams helping Fortune 1000 clients
-            achieve their software goals. Below you'll find brief summaries of
-            what I did and skills I picked up on each project.
+            There, I worked on four project teams helping various Sparq
+            technology clients achieve their software goals. Below you'll find
+            brief summaries of what I did and skills I picked up on each
+            project.
           </p>
         </section>
 
