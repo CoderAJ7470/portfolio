@@ -9,15 +9,17 @@ const FE_Portfolio = () => {
   return (
     <div className='portfolio-content-wrapper'>
       <section className='portfolio-content'>
-        <Header
-          headerClass='portfolio-content-header'
-          hasMenu
-          headingAndMenuClass='portfolio-heading-and-menu'
-          heading='Resume and Skills'
-          home
-          experience
-          outSideWork
-        />
+        <section className='portfolio-content-header'>
+          <Header
+            headerClass='portfolio-content-header'
+            hasMenu
+            headingAndMenuClass='portfolio-heading-and-menu'
+            heading='Resume and Skills'
+            home
+            experience
+            outSideWork
+          />
+        </section>
 
         <section className='resume-and-certifications'>
           <Resume />
