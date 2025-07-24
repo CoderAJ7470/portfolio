@@ -45,7 +45,8 @@ const CareerExperience = () => {
             heading='Career Experience'
             home
             portfolio
-            outSideWork
+            outsideWork
+            projects
           />
         </section>
 

@@ -32,7 +32,8 @@ body {
 
 .portfolio-heading-and-menu,
 .experience-heading-and-menu,
-.hobbies-heading-and-menu {
+.hobbies-heading-and-menu,
+.projects-heading-and-menu {
   display: flex;
   align-items: center;
   border-bottom: 2px solid var(--off-white);
@@ -40,7 +41,8 @@ body {
 
 .portfolio-heading-and-menu h1,
 .experience-heading-and-menu h1,
-.hobbies-heading-and-menu h1 {
+.hobbies-heading-and-menu h1,
+.projects-heading-and-menu h1 {
   flex-grow: 1;
 }
 
@@ -76,7 +78,8 @@ body {
 
 .portfolio-content-wrapper,
 .career-experience-wrapper,
-.hobbies-wrapper {
+.hobbies-wrapper,
+.projects-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;

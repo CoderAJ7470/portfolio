@@ -1,7 +1,8 @@
 /* Body styles for all pages except landing page */
 body:has(.portfolio-content-wrapper),
 body:has(.career-experience-wrapper),
-body:has(.hobbies-wrapper) {
+body:has(.hobbies-wrapper),
+body:has(.projects-wrapper) {
   background-image: linear-gradient(to bottom, var(--blue), var(--slate-blue));
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -58,7 +59,8 @@ a:focus {
 .main-content-wrapper,
 .portfolio-content,
 .career-experience-content,
-.hobbies-content {
+.hobbies-content,
+.projects-content {
   width: 85%;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -117,8 +119,7 @@ a:focus {
   transform: scale(1.05);
 }
 
-.drop-down-nav a:nth-of-type(1),
-.drop-down-nav a:nth-of-type(2) {
+.drop-down-nav a:not(:last-of-type) {
   margin-bottom: 0.5rem;
 }
 

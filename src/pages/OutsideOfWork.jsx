@@ -17,6 +17,7 @@ const OutsideOfWork = () => {
             home
             portfolio
             experience
+            projects
           />
         </section>
 

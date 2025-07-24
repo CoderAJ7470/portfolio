@@ -17,7 +17,8 @@ const FE_Portfolio = () => {
             heading='Resume and Skills'
             home
             experience
-            outSideWork
+            outsideWork
+            projects
           />
         </section>
 

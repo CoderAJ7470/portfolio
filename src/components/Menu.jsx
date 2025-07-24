@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const Menu = ({ home, portfolio, experience, outsideWork }) => {
+const Menu = ({ home, portfolio, experience, outsideWork, projects }) => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   const handleNavOnClick = () => {
@@ -58,6 +58,11 @@ const Menu = ({ home, portfolio, experience, outsideWork }) => {
         {outsideWork && (
           <a href='/portfolio/outside-work' tabIndex={isNavOpen ? 0 : -1}>
             Hobbies
+          </a>
+        )}
+        {projects && (
+          <a href='/portfolio/projects' tabIndex={isNavOpen ? 0 : -1}>
+            Projects
           </a>
         )}
       </nav>

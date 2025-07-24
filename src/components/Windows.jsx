@@ -26,11 +26,12 @@ const Windows = () => {
     }
   };
 
-  const handleOnFocus = () => {
-    document
-      .querySelector('#windowContainer')
-      .scrollIntoView({ behavior: 'smooth' });
-  };
+  // To-do: Call this function only when the tab key is pressed
+  // const handleOnFocus = () => {
+  //   document
+  //     .querySelector('#windowContainer')
+  //     .scrollIntoView({ behavior: 'smooth' });
+  // };
 
   return (
     <section className='windows-container' id='windowContainer'>
@@ -50,7 +51,6 @@ const Windows = () => {
             tabIndex={0}
             onClick={slideShade}
             onKeyDown={handleOnKeyDown}
-            onFocus={handleOnFocus}
           >
             Curriculum Vitae and Skills
           </p>
@@ -75,7 +75,6 @@ const Windows = () => {
             tabIndex={0}
             onClick={slideShade}
             onKeyDown={handleOnKeyDown}
-            onFocus={handleOnFocus}
           >
             Career Experience
           </p>
@@ -100,13 +99,38 @@ const Windows = () => {
             tabIndex={0}
             onClick={slideShade}
             onKeyDown={handleOnKeyDown}
-            onFocus={handleOnFocus}
           >
             Outside of Work
           </p>
         </div>
         <div className='window-links'>
           <a href='/portfolio/outside-work'>My hobbies and other things</a>
+        </div>
+      </div>
+      <div
+        role='img'
+        className='window'
+        alt='An interactive aircraft window with a slideable window shade'
+      >
+        <div
+          className='shade'
+          id='shadeFour'
+          onClick={slideShade}
+          onKeyDown={handleOnKeyDown}
+        >
+          <p
+            className='shadeText'
+            tabIndex={0}
+            onClick={slideShade}
+            onKeyDown={handleOnKeyDown}
+          >
+            Projects
+          </p>
+        </div>
+        <div className='window-links'>
+          <a href='/portfolio/projects'>
+            A showcase of past and current projects
+          </a>
         </div>
       </div>
     </section>

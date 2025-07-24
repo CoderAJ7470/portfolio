@@ -10,7 +10,8 @@ const Header = ({
   home,
   portfolio,
   experience,
-  outSideWork,
+  outsideWork,
+  projects,
 }) => {
   return (
     <header className={headerClass}>
@@ -28,7 +29,8 @@ const Header = ({
             home={home}
             portfolio={portfolio}
             experience={experience}
-            outsideWork={outSideWork}
+            outsideWork={outsideWork}
+            projects={projects}
           />
         )}
       </section>
