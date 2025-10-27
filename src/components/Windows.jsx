@@ -26,13 +26,6 @@ const Windows = () => {
     }
   };
 
-  // To-do: Call this function only when the tab key is pressed
-  // const handleOnFocus = () => {
-  //   document
-  //     .querySelector('#windowContainer')
-  //     .scrollIntoView({ behavior: 'smooth' });
-  // };
-
   return (
     <section className='windows-container' id='windowContainer'>
       <div
@@ -124,13 +117,11 @@ const Windows = () => {
             onClick={slideShade}
             onKeyDown={handleOnKeyDown}
           >
-            Projects
+            Projects and Learning
           </p>
         </div>
         <div className='window-links'>
-          <a href='/portfolio/projects'>
-            A showcase of past and current projects
-          </a>
+          <a href='/portfolio/projects'>What the shade said &#128521;</a>
         </div>
       </div>
     </section>

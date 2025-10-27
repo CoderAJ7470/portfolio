@@ -61,11 +61,10 @@ a:focus {
 .career-experience-content,
 .hobbies-content,
 .projects-content {
-  width: 85%;
+  width: 80%;
   margin-top: 2rem;
   margin-bottom: 2rem;
   overflow: hidden;
-  max-width: 80%;
 }
 
 .menu-wrapper {
@@ -155,6 +154,29 @@ li {
   margin-left: 0.3rem;
 }
 
+/* Projects and Learning page */
+
+.project-card {
+  background-color: #fff;
+  border-radius: 0.8rem;
+  padding: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.project-card:last-of-type {
+  margin-bottom: 0;
+}
+
+.project-card p {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.project-card p .fa-solid {
+  color: var(--blue);
+}
+
 /* Media queries */
 @media only screen and (max-width: 900px) {
   h1 {
@@ -204,6 +226,10 @@ li {
 
   .animate-up {
     transform: rotate(-45deg) translate(0.3em, -0.6em);
+  }
+
+  .project-card p {
+    font-size: 1.3rem;
   }
 }
 
@@ -277,5 +303,9 @@ li {
 
   .animate-up {
     transform: rotate(-45deg) translate(0.4em, -0.2em);
+  }
+
+  .project-card p {
+    font-size: 1.2rem;
   }
 }

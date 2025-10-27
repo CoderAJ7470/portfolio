@@ -25,9 +25,18 @@ body {
 
 .main-content-heading-and-menu {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   border-bottom: 2px solid var(--blue);
   width: 100%;
+}
+
+/* Visit pages section in header */
+.visit-pages-section a {
+  font-size: 2.5rem;
+}
+
+.visit-pages-section a:nth-of-type(1) {
+  margin-right: 1rem;
 }
 
 .portfolio-heading-and-menu,
@@ -39,6 +48,7 @@ body {
   border-bottom: 2px solid var(--off-white);
 }
 
+.main-content-heading-and-menu h1,
 .portfolio-heading-and-menu h1,
 .experience-heading-and-menu h1,
 .hobbies-heading-and-menu h1,
@@ -83,9 +93,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.portfolio-content-wrapper {
   width: 100%;
 }
 
@@ -131,12 +138,6 @@ body {
 
 .skills > h2 {
   margin-top: 0;
-}
-
-.current-learning {
-  color: #333;
-  background-color: #fff;
-  width: fit-content;
 }
 
 /* Career experience */
@@ -221,7 +222,7 @@ body {
   padding: 1rem;
   margin-bottom: 3rem;
   margin-top: 3rem;
-  border-radius: 2rem;
+  border-radius: 0.8rem;
 }
 
 .hobbies-content-wrapper p {
@@ -264,6 +265,23 @@ body {
   cursor: pointer;
 }
 
+/* Projects and Learning */
+.projects-content-wrapper h2 {
+  margin-bottom: 1rem;
+}
+
+.projects-content-wrapper h2:not(:first-of-type) {
+  margin-top: 4rem;
+}
+
+.projects-content-wrapper .descriptions {
+  margin-top: 1.2rem;
+}
+
+.projects-tech-used {
+  font-weight: 600;
+}
+
 /* Media queries */
 @media only screen and (min-width: 200px) {
   .mobile-only {
@@ -285,10 +303,12 @@ body {
   }
 
   .current-learning {
+    color: #333;
+    background-color: #fff;
     padding: 1rem 2rem;
     margin-top: 3rem;
     margin-bottom: 1rem;
-    border-radius: 2rem;
+    border-radius: 0.8rem;
   }
 
   .current-learning h3 {
@@ -338,7 +358,6 @@ body {
     padding: 1rem 2rem;
     margin-top: 3rem;
     margin-bottom: 1rem;
-    border-radius: 2rem;
   }
 
   .accordion-wrapper {
@@ -388,7 +407,6 @@ body {
     padding: 1rem 2rem;
     margin-top: 3rem;
     margin-bottom: 1rem;
-    border-radius: 2rem;
   }
 
   .section-buttons::after {
@@ -423,6 +441,10 @@ body {
     width: 70px;
   }
 
+  .visit-pages-section a {
+    font-size: 2.2rem;
+  }
+
   .resume-thumbnails {
     width: 120px;
     height: 154px;
@@ -451,8 +473,20 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+  .main-content-wrapper-p {
+    font-size: 1.3rem;
+  }
+
   .portfolio-photo {
     width: 55px;
+    margin-right: 0.7rem;
+  }
+
+  .visit-pages-section a {
+    font-size: 1.5rem;
+  }
+
+  .visit-pages-section a:nth-of-type(1) {
     margin-right: 0.7rem;
   }
 

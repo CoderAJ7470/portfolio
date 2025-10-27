@@ -14,7 +14,7 @@ const FE_Portfolio = () => {
             headerClass='portfolio-content-header'
             hasMenu
             headingAndMenuClass='portfolio-heading-and-menu'
-            heading='Resume and Skills'
+            heading='Resume/Skills'
             home
             experience
             outsideWork
@@ -45,18 +45,21 @@ const FE_Portfolio = () => {
           <h2>Skills-at-a-glance</h2>
 
           <ul>
-            <li>HTML 5, CSS 3, ES 6 JavaScript</li>
+            <li>HTML5, CSS3, JavaScript</li>
             <li>React, TypeScript</li>
-            <li>Git CLI, GitHub, BitBucket</li>
+            <li>Git/GitHub, BitBucket</li>
             <li>Jira, Confluence</li>
             <li>Responsive Web Design, Accessibility</li>
-            <li>Experience with AG Grid, amCharts 4, Storybook</li>
+            <li>AG Grid, amCharts 4, Storybook</li>
+            <li>React Testing Library, Jest, Enzyme, Cypress</li>
             <li>
               Adding translation functionality with react-i18next and ttag
             </li>
-            <li>Some experience with NodeJS, Splunk, Postman</li>
-            <li>Unit testing with React Testing Library, Jest, Enzyme</li>
             <li>Vite - in fact, I created this site with Vite!</li>
+            <li>
+              Some experience with NodeJS, Splunk, Postman, Redux, Redux
+              Toolkit, RTK Query, Node.js
+            </li>
             <li>
               Redux Toolkit - picked up recently from&nbsp;
               <a
@@ -68,34 +71,10 @@ const FE_Portfolio = () => {
               </a>
               <i className='fa-solid fa-up-right-from-square'></i>
             </li>
-          </ul>
-        </section>
-
-        <section className='current-learning'>
-          <h3>What am I working on/learning right now?</h3>
-
-          <ul>
             <li>
-              Improving my understanding of&nbsp;
-              <a
-                href='https://www.udemy.com/share/10aMwc/'
-                target='_blank'
-                className='list-links'
-              >
-                React unit and E2E testing
-                <i className='fa-solid fa-up-right-from-square'></i>
-              </a>
-            </li>
-            <li>
-              Learning&nbsp;
-              <a
-                href='https://www.youtube.com/playlist?list=PLC3y8-rFHvwhIEc4I4YsRz5C7GOBnxSJY'
-                target='_blank'
-                className='list-links'
-              >
-                NextJS 15
-                <i className='fa-solid fa-up-right-from-square'></i>
-              </a>
+              I have also been using ChatGPT to get into AI, improve my coding
+              speed and get helpful suggestions. I still write much of my own
+              code though.
             </li>
           </ul>
         </section>

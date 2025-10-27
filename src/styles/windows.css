@@ -8,7 +8,7 @@
 .window {
   height: 400px;
   width: 300px;
-  border: 20px solid var(--blue);
+  border: 15px solid var(--blue);
   border-radius: 45%;
   margin: 0.5rem;
   display: flex;
@@ -70,6 +70,8 @@
   border-radius: 0.3em;
 }
 
+/* Media queries */
+
 @media only screen and (min-width: 1100px) {
   .window {
     margin: 1rem;
@@ -82,12 +84,10 @@
   }
 }
 
-/* Media queries */
 @media only screen and (max-width: 1400px) {
   .window {
     height: 320px;
     width: 250px;
-    border: 20px solid var(--blue);
     border-radius: 40%;
   }
 

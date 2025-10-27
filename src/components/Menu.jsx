@@ -57,7 +57,7 @@ const Menu = ({ home, portfolio, experience, outsideWork, projects }) => {
         )}
         {outsideWork && (
           <a href='/portfolio/outside-work' tabIndex={isNavOpen ? 0 : -1}>
-            Hobbies
+            Outside Work
           </a>
         )}
         {projects && (
