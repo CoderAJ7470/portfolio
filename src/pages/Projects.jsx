@@ -109,8 +109,16 @@ const Projects = () => {
                 </a>
                 <i className='fa-solid fa-up-right-from-square'></i> |{' '}
                 <span className='projects-tech-used'>
-                  Tech used: Vite, React, Next.js, JavaScript, Tailwind CSS,
-                  AppWrite
+                  Tech used: Vite, React, Next.js, JavaScript, Tailwind
+                  CSS,&nbsp;
+                  <a
+                    href='https://appwrite.io/'
+                    className='list-links'
+                    target='_blank'
+                  >
+                    Appwrite
+                  </a>
+                  <i className='fa-solid fa-up-right-from-square'></i>
                 </span>
               </p>
               <p className='descriptions'>
@@ -151,24 +159,24 @@ const Projects = () => {
 
             <ul>
               <li>
-                Improving my understanding of&nbsp;
+                Currently learning Node.js from Max Schwarzmüller's&nbsp;
                 <a
-                  href='https://www.udemy.com/share/10aMwc/'
+                  href='https://www.udemy.com/course/nodejs-the-complete-guide/'
                   target='_blank'
                   className='list-links'
                 >
-                  React unit and E2E testing
+                  NodeJS - The Complete Guide
                 </a>
-                <i className='fa-solid fa-up-right-from-square'></i>
+                <i className='fa-solid fa-up-right-from-square'></i> on Udemy
               </li>
               <li>
-                Learning&nbsp;
+                Attending a local Python Bootcamp - &nbsp;
                 <a
-                  href='https://www.youtube.com/playlist?list=PLC3y8-rFHvwhIEc4I4YsRz5C7GOBnxSJY'
+                  href='https://www.techlahoma.org/ok-coders/'
                   target='_blank'
                   className='list-links'
                 >
-                  NextJS 15
+                  OKCoders Pro - Introduction to Python
                 </a>
                 <i className='fa-solid fa-up-right-from-square'></i>
               </li>
