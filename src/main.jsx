@@ -1,7 +1,7 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { createRoot } from 'react-dom/client';
 import App from './App.jsx';
-import Main from './pages/MainContent.jsx';
+import LandingPage from './pages/LandingPage.jsx';
 import CareerExperience from './pages/CareerExperience.jsx';
 import OutsideOfWork from './pages/OutsideOfWork.jsx';
 import FE_Portfolio from './pages/FE_Portfolio.jsx';
@@ -14,7 +14,7 @@ const router = createBrowserRouter([
     path: '/portfolio/',
     element: <App />,
     children: [
-      { path: '/portfolio/', element: <Main /> },
+      { path: '/portfolio/', element: <LandingPage /> },
       { path: '/portfolio/fe-portfolio', element: <FE_Portfolio /> },
       { path: '/portfolio/experience', element: <CareerExperience /> },
       { path: '/portfolio/outside-work', element: <OutsideOfWork /> },

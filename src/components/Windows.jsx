@@ -83,30 +83,6 @@ const Windows = () => {
       >
         <div
           className='shade'
-          id='shadeThree'
-          onClick={slideShade}
-          onKeyDown={handleOnKeyDown}
-        >
-          <p
-            className='shadeText'
-            tabIndex={0}
-            onClick={slideShade}
-            onKeyDown={handleOnKeyDown}
-          >
-            Outside of Work
-          </p>
-        </div>
-        <div className='window-links'>
-          <a href='/portfolio/outside-work'>My hobbies and other things</a>
-        </div>
-      </div>
-      <div
-        role='img'
-        className='window'
-        alt='An interactive aircraft window with a slideable window shade'
-      >
-        <div
-          className='shade'
           id='shadeFour'
           onClick={slideShade}
           onKeyDown={handleOnKeyDown}
@@ -122,6 +98,30 @@ const Windows = () => {
         </div>
         <div className='window-links'>
           <a href='/portfolio/projects'>What the shade said &#128521;</a>
+        </div>
+      </div>
+      <div
+        role='img'
+        className='window'
+        alt='An interactive aircraft window with a slideable window shade'
+      >
+        <div
+          className='shade'
+          id='shadeThree'
+          onClick={slideShade}
+          onKeyDown={handleOnKeyDown}
+        >
+          <p
+            className='shadeText'
+            tabIndex={0}
+            onClick={slideShade}
+            onKeyDown={handleOnKeyDown}
+          >
+            Outside of Work
+          </p>
+        </div>
+        <div className='window-links'>
+          <a href='/portfolio/outside-work'>My hobbies and other things</a>
         </div>
       </div>
     </section>
