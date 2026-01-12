@@ -1,4 +1,15 @@
 /* Body styles for all pages except landing page */
+
+.portfolio-content-wrapper,
+.career-experience-wrapper,
+.hobbies-wrapper,
+.projects-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 body:has(.portfolio-content-wrapper),
 body:has(.career-experience-wrapper),
 body:has(.hobbies-wrapper),
@@ -9,7 +20,7 @@ body:has(.projects-wrapper) {
   color: var(--off-white);
 }
 
-/* Common styles  */
+/* Common styles */
 h1 {
   font-size: 3.2rem;
   letter-spacing: 1px;
@@ -17,7 +28,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   letter-spacing: 1px;
 }
 
@@ -67,61 +78,6 @@ a:focus {
   overflow: hidden;
 }
 
-.menu-wrapper {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-.drop-down-nav {
-  background-color: var(--off-white);
-  position: absolute;
-  top: 70px;
-  right: -300px;
-  padding: 1rem;
-  white-space: nowrap;
-  transition: right 1s ease;
-  z-index: 1;
-}
-
-.nav-visible {
-  right: 0px;
-}
-
-.bar {
-  transition: transform 0.5s ease;
-}
-
-.animate-down {
-  transform: rotate(45deg) translate(0.9rem, 0.6em);
-}
-
-.fade {
-  transform: scale(0);
-}
-
-.animate-up {
-  transform: rotate(-45deg) translate(0.7em, -0.5em);
-}
-
-.drop-down-nav a {
-  color: var(--blue);
-  background: none;
-  text-decoration: none;
-  display: block;
-  font-size: 1.8rem;
-  transition: transform 0.4s ease;
-}
-
-.drop-down-nav a:hover,
-.drop-down-nav a:focus {
-  transform: scale(1.05);
-}
-
-.drop-down-nav a:not(:last-of-type) {
-  margin-bottom: 0.5rem;
-}
-
 li {
   font-size: 1.5rem;
   margin-top: 0.5rem;
@@ -155,7 +111,6 @@ li {
 }
 
 /* Projects and Learning page */
-
 .project-card {
   background-color: #fff;
   border-radius: 0.8rem;
@@ -184,8 +139,7 @@ li {
   }
 
   h2 {
-    font-size: 2rem;
-    letter-spacing: 1px;
+    font-size: 1.8rem;
   }
 
   h3 {
@@ -193,14 +147,6 @@ li {
   }
 
   p {
-    font-size: 1.5rem;
-  }
-
-  .drop-down-nav {
-    top: 60px;
-  }
-
-  .drop-down-nav a {
     font-size: 1.5rem;
   }
 
@@ -220,14 +166,6 @@ li {
     font-size: 0.6rem;
   }
 
-  .animate-down {
-    transform: rotate(45deg) translate(0.5em, 0.6em);
-  }
-
-  .animate-up {
-    transform: rotate(-45deg) translate(0.3em, -0.6em);
-  }
-
   .project-card p {
     font-size: 1.3rem;
   }
@@ -240,7 +178,6 @@ li {
 
   h2 {
     font-size: 1.5rem;
-    letter-spacing: 1px;
   }
 
   h3 {
@@ -251,20 +188,6 @@ li {
     font-size: 1.2rem;
     letter-spacing: 0.02rem;
     line-height: 25px;
-  }
-
-  .drop-down-nav {
-    top: 40px;
-    z-index: 1;
-  }
-
-  .drop-down-nav a {
-    font-size: 1.2rem;
-  }
-
-  .drop-down-nav a:nth-of-type(1),
-  .drop-down-nav a:nth-last-of-type(2) {
-    margin-bottom: 0.7rem;
   }
 
   li {
@@ -291,18 +214,6 @@ li {
   .resume p,
   .cdl-certification p {
     font-size: 1rem;
-  }
-
-  .menu-icon {
-    margin-top: 0.4rem;
-  }
-
-  .animate-down {
-    transform: rotate(45deg) translate(0.5em, 0.3em);
-  }
-
-  .animate-up {
-    transform: rotate(-45deg) translate(0.4em, -0.2em);
   }
 
   .project-card p {

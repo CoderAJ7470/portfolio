@@ -22,7 +22,6 @@ const Resume = () => {
             alt={`thumbnail of page 2 of Ameya's resume`}
           />
         </a>
-        <p>Thumbnail opens the full-size PDF</p>
       </div>
     </>
   );

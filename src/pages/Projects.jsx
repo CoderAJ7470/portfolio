@@ -1,24 +1,14 @@
-import Header from '../components/Header';
+import Nav from '../components/Nav';
 
 import '../styles/portfolio.css';
 import '../styles/common.css';
+import '../styles/projects.css';
 
 const Projects = () => {
   return (
     <div className='projects-wrapper'>
       <section className='projects-content'>
-        <section className='projects-content-header'>
-          <Header
-            headerClass='projects-header'
-            hasMenu
-            headingAndMenuClass='projects-heading-and-menu'
-            heading='Projects/Learning'
-            home
-            portfolio
-            experience
-            outsideWork
-          />
-        </section>
+        <Nav />
 
         <section className='projects-content-wrapper'>
           <p>
@@ -46,7 +36,8 @@ const Projects = () => {
                 <i className='fa-solid fa-up-right-from-square'></i> |{' '}
                 <span className='projects-tech-used'>
                   Tech used: Vite, React, React Router, JavaScript, CSS3
-                </span>
+                </span>{' '}
+                | Will be updated periodically
               </p>
             </div>
             <div className='project-card'>
@@ -83,6 +74,24 @@ const Projects = () => {
                 <i className='fa-solid fa-up-right-from-square'></i>. I used RTK
                 Query, which I have recently learned, to make the api call and
                 show the results in the UI.
+              </p>
+            </div>
+          </section>
+
+          <h2>Recently completed courses</h2>
+
+          <section className='project-cards'>
+            <div className='project-card'>
+              <p>
+                Attended a local, in-person Python Bootcamp - &nbsp;
+                <a
+                  href='https://www.techlahoma.org/ok-coders/'
+                  target='_blank'
+                  className='list-links'
+                >
+                  OKCoders Pro - Introduction to Python
+                </a>
+                <i className='fa-solid fa-up-right-from-square'></i>
               </p>
             </div>
           </section>
@@ -168,17 +177,6 @@ const Projects = () => {
                   NodeJS - The Complete Guide
                 </a>
                 <i className='fa-solid fa-up-right-from-square'></i> on Udemy
-              </li>
-              <li>
-                Attending a local Python Bootcamp - &nbsp;
-                <a
-                  href='https://www.techlahoma.org/ok-coders/'
-                  target='_blank'
-                  className='list-links'
-                >
-                  OKCoders Pro - Introduction to Python
-                </a>
-                <i className='fa-solid fa-up-right-from-square'></i>
               </li>
             </ul>
           </section>

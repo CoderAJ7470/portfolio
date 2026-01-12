@@ -1,0 +1,111 @@
+:root {
+  --off-white: #f3f3e0;
+  --blue: #133e87;
+  --slate-blue: #608bc1;
+  --light-blue: #cbdceb;
+}
+
+/* General page layout */
+.hobbies-content-wrapper {
+  color: #333;
+  background-color: #fff;
+  padding: 1rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  border-radius: 0.8rem;
+}
+
+.hobbies-content-wrapper p {
+  margin-top: 0.5rem;
+}
+
+/* Slide container */
+.slide-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  position: relative;
+}
+
+.slides {
+  background: none;
+  transition: none;
+  border-top: 5px solid #fff;
+  border-bottom: 5px solid #fff;
+}
+
+.slides img {
+  cursor: pointer;
+  vertical-align: bottom;
+  height: auto;
+  width: 100%;
+}
+
+.slide-buttons {
+  width: 4rem;
+  border: none;
+  background-color: #fff;
+  color: var(--blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.button-left {
+  clip-path: ellipse(93.75% 55% at 100% 50%);
+  cursor: pointer;
+}
+
+.button-right {
+  clip-path: ellipse(93.75% 55% at 0% 50%);
+  cursor: pointer;
+}
+
+.fa-caret-left {
+  margin-left: 0.7rem;
+  font-size: 5rem;
+}
+
+.fa-caret-right {
+  margin-right: 0.7rem;
+  font-size: 5rem;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 900px) {
+  .slides {
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+  }
+
+  .slide-buttons {
+    font-size: 1.5rem;
+  }
+
+  .fa-caret-left {
+    margin-left: 0.5rem;
+    font-size: 3rem;
+  }
+
+  .fa-caret-right {
+    margin-right: 0.5rem;
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .slide-buttons {
+    font-size: 1.2rem;
+  }
+
+  .fa-caret-left {
+    margin-left: 0.3rem;
+    font-size: 2rem;
+  }
+
+  .fa-caret-right {
+    margin-right: 0.3rem;
+    font-size: 2rem;
+  }
+}

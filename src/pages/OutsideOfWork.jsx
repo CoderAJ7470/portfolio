@@ -1,25 +1,15 @@
-import Header from '../components/Header';
+import Nav from '../components/Nav';
 import Slider from '../components/Slider';
 
 import '../styles/portfolio.css';
 import '../styles/common.css';
+import '../styles/outside-work.css';
 
 const OutsideOfWork = () => {
   return (
     <div className='hobbies-wrapper'>
       <section className='hobbies-content'>
-        <section className='hobbies-content-header'>
-          <Header
-            headerClass='hobbies-header'
-            hasMenu
-            headingAndMenuClass='hobbies-heading-and-menu'
-            heading='Outside of Work'
-            home
-            portfolio
-            experience
-            projects
-          />
-        </section>
+        <Nav />
 
         <section className='hobbies-content-wrapper'>
           <p>So, what do I like to do for fun you ask?</p>

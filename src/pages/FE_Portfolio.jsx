@@ -1,26 +1,14 @@
-import Header from '../components/Header';
+import Nav from '../components/Nav';
 import Resume from '../components/Resume';
 import googleCDLBadge from '../assets/cdl_certification.png';
 
-import '../styles/portfolio.css';
-import '../styles/common.css';
+import '../styles/fe-portfolio.css';
 
 const FE_Portfolio = () => {
   return (
     <div className='portfolio-content-wrapper'>
       <section className='portfolio-content'>
-        <section className='portfolio-content-header'>
-          <Header
-            headerClass='portfolio-content-header'
-            hasMenu
-            headingAndMenuClass='portfolio-heading-and-menu'
-            heading='Resume/Skills'
-            home
-            experience
-            outsideWork
-            projects
-          />
-        </section>
+        <Nav />
 
         <section className='resume-and-certifications'>
           <Resume />
@@ -37,7 +25,6 @@ const FE_Portfolio = () => {
                 alt='Google Cloud Digital Leader Certification badge'
               />
             </a>
-            <p>Thumbnail opens cert. in a new tab/window</p>
           </section>
         </section>
 
@@ -67,14 +54,15 @@ const FE_Portfolio = () => {
                 target='_blank'
                 className='non-card-links'
               >
-                Codevolution's tutorial
+                Codevolution&apos;s tutorial
               </a>
               <i className='fa-solid fa-up-right-from-square'></i>
             </li>
             <li>
-              I have also been using ChatGPT to get into AI, improve my coding
-              speed and get helpful suggestions. I still write much of my own
-              code though.
+              I am also using AI to enhance my coding productivity and get
+              better-acquainted with this new area of software development.
+              However, I still enjoy problem-solving and writing my own code. I
+              have my thinking cap on when I encounter a challenge!
             </li>
           </ul>
         </section>

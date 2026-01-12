@@ -7,7 +7,9 @@ import OutsideOfWork from './pages/OutsideOfWork.jsx';
 import FE_Portfolio from './pages/FE_Portfolio.jsx';
 import Projects from './pages/Projects.jsx';
 
-import '../src/styles/portfolio.css';
+import './styles/portfolio.css';
+import './styles/common.css';
+import './styles/nav.css';
 
 const router = createBrowserRouter([
   {

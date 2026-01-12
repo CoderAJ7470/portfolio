@@ -1,0 +1,30 @@
+.projects-content-wrapper h2 {
+  margin-bottom: 1rem;
+}
+
+.projects-content-wrapper h2:not(:first-of-type) {
+  margin-top: 3rem;
+}
+
+.projects-content-wrapper .descriptions {
+  margin-top: 1.2rem;
+}
+
+.projects-tech-used {
+  font-weight: 600;
+}
+
+.current-learning {
+  color: #333;
+  background-color: #fff;
+  padding: 1rem 2rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  border-radius: 0.8rem;
+}
+
+.current-learning h3 {
+  margin-top: 0.5rem;
+  font-weight: 500;
+  letter-spacing: 0;
+}

@@ -1,0 +1,94 @@
+.experience-content-wrapper {
+  margin-top: 1rem;
+}
+
+.experience-content-wrapper p a {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.accordion-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.accordion-wrapper p {
+  font-size: 1.5rem;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.expandable .inner .fa-solid {
+  margin-right: 1.2rem;
+}
+
+.section-buttons {
+  border: none;
+  color: var(--blue);
+  font-size: 1.5rem;
+  padding: 1rem;
+  background-color: var(--light-blue);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.section-buttons:hover,
+.active-button {
+  background-color: var(--off-white);
+}
+
+.section-buttons::after {
+  content: '\2304';
+  float: right;
+  margin-left: 1rem;
+  position: absolute;
+  transition: transform 0.8s ease;
+}
+
+.button-selected::after {
+  transform: rotate(-180deg);
+}
+
+.expandable {
+  display: grid;
+  grid-template-rows: 0fr;
+  border-width: 0 3px 4px 3px;
+  border-right-color: var(--light-blue);
+  border-left-color: var(--light-blue);
+  border-bottom-color: var(--blue);
+  border-style: solid;
+  transition: grid-template-rows 0.8s ease-out;
+}
+
+.expandable .inner {
+  overflow: hidden;
+}
+
+.is-open {
+  grid-template-rows: 1fr;
+}
+
+/* Media queries for experience page */
+@media only screen and (max-width: 900px) {
+  .accordion-wrapper p {
+    font-size: 1.3rem;
+  }
+
+  .experience-content-wrapper p a {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .accordion-wrapper p {
+    font-size: 1.1rem;
+  }
+
+  .experience-content-wrapper p a {
+    font-size: 1.2rem;
+  }
+}

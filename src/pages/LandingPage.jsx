@@ -5,13 +5,7 @@ const LandingPage = () => {
   return (
     <div className='main-content-wrapper'>
       <section className='main-content'>
-        <Header
-          photo
-          headerClass='main-content-header'
-          headingAndMenuClass='main-content-heading-and-menu'
-          heading='Hi there!'
-          hasVisitPages
-        />
+        <Header />
 
         <p className='main-content-wrapper-p'>
           I'm <b>Ameya Joshi</b>,&nbsp;a Frontend/React developer based in the

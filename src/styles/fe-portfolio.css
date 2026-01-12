@@ -1,0 +1,72 @@
+/* Container for Resume thumbnails and Certifications */
+.resume-and-certifications {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.resume {
+  margin-right: 3rem;
+}
+
+/* Resume Thumbnails */
+.resume-thumbnails {
+  width: 200px;
+  height: 257px;
+}
+
+/* Optional spacing for first thumbnail (if you have multiple) */
+.resume-thumbnails:nth-of-type(1) {
+  margin-right: 1rem;
+}
+
+/* CDL Certification Badge */
+.cdl-badge {
+  width: 257px;
+}
+
+.cdl-certification {
+  text-align: center; /* centers content inside badge container */
+}
+
+/* Skills section */
+.skills {
+  width: 85%;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 900px) {
+  .resume-thumbnails {
+    width: 120px;
+    height: 154px;
+  }
+
+  .resume-thumbnails:nth-of-type(1) {
+    margin-right: 0.5rem;
+  }
+
+  .cdl-badge {
+    width: 156px;
+  }
+
+  .resume-and-certifications {
+    gap: 0.5rem;
+  }
+
+  .resume {
+    margin: 0;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .resume-and-certifications {
+    flex-direction: column;
+    align-items: center; /* centers vertically when stacked */
+    gap: 1rem;
+  }
+
+  .resume-thumbnails,
+  .cdl-badge {
+    margin: 0 auto; /* ensure centered when stacked */
+  }
+}
