@@ -65,18 +65,18 @@ const CareerExperience = () => {
                 <i className='fa-solid fa-car'></i>
                 Tech stack was mainly NodeJS and AngularJS, so definitely
                 outside my usual front-end comfort zone. Also had HTML 5, CSS 3
-                and JS, plus some Java backend.
+                and JS, plus some Java backend
               </p>
               <p>
                 <i className='fa-solid fa-car'></i>I took the challenge head-on,
                 which was made easier with all of the great support and
-                collaboration from my peers.
+                collaboration from my peers
               </p>
               <p>
                 <i className='fa-solid fa-car'></i>I handled varying tasks, from
                 as simple as removing old Java backend code to handling
                 complicated api-driven dynamic data handling, with some small
-                frontend tasks sprinkled in.
+                frontend tasks sprinkled in
               </p>
               <p>
                 <i className='fa-solid fa-car'></i>I did get a chance to do some
@@ -89,7 +89,7 @@ const CareerExperience = () => {
                 in charge of the footer changes, keeping track of which page's
                 footer had the link and which still needed it. While nothing
                 earth-shattering, it was a good first experience in
-                collaboration and communication across different teams.
+                collaboration and communication across different teams
               </p>
             </div>
           </section>
@@ -128,14 +128,14 @@ const CareerExperience = () => {
                 <i className='fa-solid fa-chart-line'></i>I also worked on
                 improving Outlook email templates, where I introduced dynamic
                 content like names and dates; also worked extensively on
-                enabling translations throughout the app for Spanish and French.
+                enabling translations throughout the app for Spanish and French
               </p>
               <p>
                 <i className='fa-solid fa-chart-line'></i>
                 Last but not least, I was also given the opportunity to lead
                 routine meetings like the daily standup, sprint retrospective
                 and sprint planning. Leading these further developed my soft
-                skills.
+                skills
               </p>
             </div>
           </section>
@@ -154,29 +154,29 @@ const CareerExperience = () => {
               <p>
                 <i className='fa-solid fa-dollar-sign'></i>
                 The main focus for me on this project was to add accessibility
-                to two of the client's apps - one internal, one public-facing.
+                to two of the client's apps - one internal, one public-facing
               </p>
               <p>
                 <i className='fa-solid fa-dollar-sign'></i>
                 The frontend code base on this project was also in React and
-                TypeScript, with NodeJS, APIs and other backend code.
+                TypeScript, with NodeJS, APIs and other backend code
               </p>
               <p>
                 <i className='fa-solid fa-dollar-sign'></i>
                 This was my first deep-dive into accessibility in web apps, so I
                 took the time to really learn what it's about, how it works and
                 get familiar with the various specifications of the Web Content
-                Accessibility Guidelines (WCAG).
+                Accessibility Guidelines (WCAG)
               </p>
               <p>
                 <i className='fa-solid fa-dollar-sign'></i>I learned and used
                 semantic HTML, ARIA attributes, the browser WAVE Tool extension
-                and the WCAG color contrast checker.
+                and the WCAG color contrast checker
               </p>
               <p>
                 <i className='fa-solid fa-dollar-sign'></i>
                 Also learned how the NVDA screen reader works, and thoroughly
-                tested it in both web apps to ensure correct functionality.
+                tested it in both web apps to ensure correct functionality
               </p>
             </div>
           </section>
@@ -211,7 +211,7 @@ const CareerExperience = () => {
               <p>
                 <i className='fa-solid fa-car-side'></i>I worked with both, the
                 frontend and backend teams on the Sparq and client side to help
-                build out the app's features and improve existing code.
+                build out the app's features and improve existing code
               </p>
               <p>
                 <i className='fa-solid fa-car-side'></i>
@@ -219,7 +219,7 @@ const CareerExperience = () => {
                 as sending/receiving text messages and showing conversations, to
                 more complex ones like populating filtered API data in search
                 results, searching for closed conversations or showing
-                conversation history for a particular rental or reservation.
+                conversation history for a particular rental or reservation
               </p>
               <p>
                 <i className='fa-solid fa-car-side'></i>
@@ -233,7 +233,7 @@ const CareerExperience = () => {
                 <i className='fa-solid fa-car-side'></i>In addition to all that,
                 I also worked on implementing accessibility and translations in
                 the app, using my experience gained in both areas from the
-                previous two client projects.
+                previous two client projects
               </p>
             </div>
           </section>
