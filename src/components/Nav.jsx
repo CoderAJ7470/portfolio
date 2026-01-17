@@ -4,7 +4,6 @@ import { returnHeading } from '../helpers/functions';
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
-  // const [heading, setHeading] = useState('');
 
   const toggleMenu = () => setIsOpen((prev) => !prev);
   const closeMenu = () => setIsOpen(false);

@@ -157,10 +157,6 @@ li {
   .fa-up-right-from-square {
     font-size: 0.6rem;
   }
-
-  .project-card p {
-    font-size: 1.3rem;
-  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -210,9 +206,5 @@ li {
   .resume p,
   .cdl-certification p {
     font-size: 1rem;
-  }
-
-  .project-card p {
-    font-size: 1.2rem;
   }
 }

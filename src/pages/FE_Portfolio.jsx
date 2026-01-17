@@ -57,7 +57,7 @@ const FE_Portfolio = () => {
 
             <p className='card-paragraphs'>
               Also, have a look at my&nbsp;
-              <a href='/portfolio/projects/' className='list-links'>
+              <a href='/portfolio/projects' className='list-links'>
                 projects
               </a>
               , where you will find what I worked on recently, as well as what I
