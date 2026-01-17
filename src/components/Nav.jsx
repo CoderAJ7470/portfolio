@@ -4,16 +4,13 @@ import { returnHeading } from '../helpers/functions';
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [heading, setHeading] = useState('');
+  // const [heading, setHeading] = useState('');
 
   const toggleMenu = () => setIsOpen((prev) => !prev);
   const closeMenu = () => setIsOpen(false);
 
-  const location = useLocation();
-
-  useEffect(() => {
-    setHeading(returnHeading(location.pathname));
-  }, [location]);
+  const { pathname } = useLocation();
+  const heading = returnHeading(pathname);
 
   return (
     <nav className='menu-wrapper'>

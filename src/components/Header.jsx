@@ -1,6 +1,6 @@
 import portfolioImage from '../assets/portfolio-site-photo.jpg';
 
-const Header = () => {
+const HomepageHeader = () => {
   return (
     <header className='main-content-header'>
       <img
@@ -33,4 +33,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HomepageHeader;

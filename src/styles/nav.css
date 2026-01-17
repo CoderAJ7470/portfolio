@@ -16,7 +16,7 @@
 }
 
 .site-nav a {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: var(--off-white);
   text-decoration: none;
 }
@@ -40,7 +40,7 @@
   flex-grow: 1;
 }
 
-/* Hamburger bars */
+/* Hamburger icon bars */
 .bar {
   background-color: var(--off-white);
   border-radius: 5px;
@@ -120,11 +120,11 @@
   }
 
   .animate-down {
-    transform: rotate(45deg) translate(0.5em, 0.6em);
+    transform: rotate(45deg) translate(0.45em, 0.6em);
   }
 
   .animate-up {
-    transform: rotate(-45deg) translate(0.3em, -0.6em);
+    transform: rotate(-45deg) translate(0.34em, -0.6em);
   }
 }
 

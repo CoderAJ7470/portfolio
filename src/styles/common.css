@@ -33,7 +33,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   letter-spacing: 1px;
   margin-bottom: 1rem;
   font-weight: 400;
@@ -61,11 +61,6 @@ a:focus {
   outline: none;
 }
 
-.resume p,
-.cdl-certification p {
-  font-size: 1.2rem;
-}
-
 /* Wrapper styles for all pages */
 .main-content-wrapper,
 .portfolio-content,
@@ -76,6 +71,17 @@ a:focus {
   margin-top: 2rem;
   margin-bottom: 2rem;
   overflow: hidden;
+}
+
+/* Main content wrappers */
+.portfolio-content-wrapper,
+.career-experience-wrapper,
+.hobbies-wrapper,
+.projects-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 li {
@@ -98,6 +104,10 @@ li {
   margin-left: 0.3rem;
 }
 
+.card-paragraphs {
+  font-size: 1.5rem;
+}
+
 .non-card-links {
   font-size: 1.5rem;
   font-weight: 500;
@@ -108,28 +118,6 @@ li {
   font-size: 0.8rem;
   vertical-align: top;
   margin-left: 0.3rem;
-}
-
-/* Projects and Learning page */
-.project-card {
-  background-color: #fff;
-  border-radius: 0.8rem;
-  padding: 1rem;
-  margin-bottom: 2.5rem;
-}
-
-.project-card:last-of-type {
-  margin-bottom: 0;
-}
-
-.project-card p {
-  margin: 0;
-  font-size: 1.5rem;
-  color: #000;
-}
-
-.project-card p .fa-solid {
-  color: var(--blue);
 }
 
 /* Media queries */
@@ -155,6 +143,10 @@ li {
   }
 
   .list-links {
+    font-size: 1.3rem;
+  }
+
+  .card-paragraphs {
     font-size: 1.3rem;
   }
 
@@ -195,6 +187,10 @@ li {
   }
 
   .list-links {
+    font-size: 1.2rem;
+  }
+
+  .card-paragraphs {
     font-size: 1.2rem;
   }
 

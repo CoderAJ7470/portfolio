@@ -74,6 +74,10 @@
 
 /* Media queries for experience page */
 @media only screen and (max-width: 900px) {
+  .section-buttons {
+    font-size: 1.3rem;
+  }
+
   .accordion-wrapper p {
     font-size: 1.3rem;
   }
@@ -84,6 +88,10 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .section-buttons {
+    font-size: 1.1rem;
+  }
+
   .accordion-wrapper p {
     font-size: 1.1rem;
   }

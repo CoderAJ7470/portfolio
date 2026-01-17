@@ -16,7 +16,7 @@ body {
   font-style: normal;
 }
 
-/* Main content container */
+/* Homepage styles */
 .main-content-header {
   display: flex;
   align-items: center;
@@ -29,7 +29,6 @@ body {
   align-items: center;
 }
 
-/* Headings + menu wrapper */
 .main-content-heading-and-menu {
   display: flex;
   align-items: center;
@@ -41,22 +40,6 @@ body {
   flex-grow: 1;
 }
 
-/* Menu icon (bars) */
-.bar {
-  background-color: var(--off-white);
-  border-radius: 5px;
-}
-
-.menu-icon {
-  cursor: pointer;
-  margin-left: auto;
-}
-
-.bar:nth-of-type(1),
-.bar:nth-of-type(2) {
-  margin-bottom: 0.313rem;
-}
-
 /* Portfolio photo */
 .portfolio-photo {
   border: 2px solid var(--blue);
@@ -64,17 +47,6 @@ body {
   width: 70px;
   padding: 2px;
   margin-right: 1.5rem;
-}
-
-/* Main content wrappers */
-.portfolio-content-wrapper,
-.career-experience-wrapper,
-.hobbies-wrapper,
-.projects-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
 }
 
 /* Heading spacing inside content */

@@ -1,3 +1,23 @@
+.project-card {
+  background-color: #fff;
+  border-radius: 0.8rem;
+  padding: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.project-card:last-of-type {
+  margin-bottom: 0;
+}
+
+.project-card p {
+  margin: 0;
+  color: #000;
+}
+
+.project-card p .fa-solid {
+  color: var(--blue);
+}
+
 .projects-content-wrapper h2 {
   margin-bottom: 1rem;
 }
