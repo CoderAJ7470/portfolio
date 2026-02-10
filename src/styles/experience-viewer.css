@@ -112,7 +112,7 @@
   animation: fadeAnimation 500ms ease-in-out forwards;
 }
 
-.experience-content.fa-solid {
+.experience-card .experience-content .fa-solid {
   margin-right: 1.2rem;
 }
 
@@ -153,7 +153,7 @@
     padding-bottom: 0.5rem;
   }
 
-  .fa-solid {
+  .experience-card .experience-content .fa-solid {
     margin-right: 0.5rem;
   }
 }
