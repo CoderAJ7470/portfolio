@@ -96,7 +96,9 @@
 }
 
 .drop-down-nav a {
-  transition: color 0.2s ease, transform 0.2s ease;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .drop-down-nav a:hover,
@@ -110,7 +112,7 @@
 }
 
 /* Media queries */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 942px) {
   .desktop-only {
     display: none;
   }
@@ -143,7 +145,7 @@
 }
 
 /* Desktop only */
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 942px) {
   .mobile-only {
     display: none;
   }
@@ -165,7 +167,7 @@
   }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 942px) {
   .bar {
     width: 3.2rem;
     height: 0.2rem;

@@ -1,0 +1,170 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 200ms ease;
+}
+
+.modal-overlay.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 1rem;
+  width: 90%;
+  max-width: 1000px;
+  height: 90vh;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  transform: scale(0.95) translateY(10px);
+  transition: transform 200ms ease;
+}
+
+.modal-overlay.open.modal-content {
+  transform: scale(1) translateY(0);
+}
+
+.modal-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1.3rem;
+  border-bottom: 2px solid #000;
+}
+
+.client-experience-buttons {
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+  flex-grow: 1;
+}
+
+.client-xp-btn {
+  color: var(--blue);
+  background-color: #fff;
+  padding: 0.7rem 1rem;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  position: relative;
+  cursor: pointer;
+  height: fit-content;
+}
+
+.client-xp-btn:not(:last-of-type) {
+  margin-right: 1rem;
+}
+
+.client-xp-btn:active {
+  top: 2px;
+  box-shadow: none;
+}
+
+.client-xp-btn.selected-button {
+  color: #fff;
+  background-color: var(--blue);
+}
+
+.modal-close-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #000;
+  padding: 0.2rem;
+}
+
+.modal-close-button:active {
+  background-color: red;
+  color: #fff;
+}
+
+.experience-card {
+  color: #000;
+  overflow-y: auto;
+}
+
+.experience-card h2 {
+  background-color: #fff;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.experience-card p {
+  font-size: 1.5rem;
+}
+
+.experience-content {
+  animation: fadeAnimation 500ms ease-in-out forwards;
+}
+
+.experience-content.fa-solid {
+  margin-right: 1.2rem;
+}
+
+@keyframes fadeAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-1px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .client-xp-btn {
+    font-size: 1.1rem;
+    padding: 0.5rem 0.5rem;
+  }
+
+  .modal-controls {
+    padding-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .experience-card p {
+    font-size: 1.2rem;
+  }
+
+  .client-xp-btn {
+    font-size: 1rem;
+    padding: 0.4rem 0.4rem;
+  }
+
+  .modal-controls {
+    padding-bottom: 0.5rem;
+  }
+
+  .fa-solid {
+    margin-right: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .client-xp-btn {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.3rem;
+  }
+
+  .client-xp-btn:not(:last-of-type) {
+    margin-right: 0.6rem;
+  }
+}

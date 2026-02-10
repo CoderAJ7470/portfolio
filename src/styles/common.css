@@ -1,3 +1,10 @@
+:root {
+  --off-white: #f3f3e0;
+  --blue: #133e87;
+  --slate-blue: #608bc1;
+  --light-blue: #cbdceb;
+}
+
 /* Body styles for all pages except landing page */
 
 .portfolio-content-wrapper,

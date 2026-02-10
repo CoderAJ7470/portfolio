@@ -10,22 +10,42 @@ const FE_Portfolio = () => {
         <Nav />
 
         <section className='skills'>
-          <h2>Skills-at-a-glance</h2>
+          <p>
+            I am a frontend developer with over 5 years of professional
+            React/TypeScript experience, in addition to building and maintaining
+            multiple enterprise-level applications. I focus on shipping
+            reliable, maintainable features, and I actively research and
+            experiment to solve challenges - whether that is integrating APIs,
+            implementing accessibility, or improving UI components. I have
+            worked closely with backend and QA teams, and I take ownership of
+            tasks while collaborating effectively. Below is a listing of skills
+            in which I am proficient, and ones that I have recently picked up.
+          </p>
 
           <div className='skills-card'>
-            <h3>Professional experience with</h3>
+            <h3>Professional experience:</h3>
             <ul>
-              <li>React, TypeScript</li>
-              <li>HTML5, CSS3, JavaScript</li>
-              <li>Git/GitHub, BitBucket</li>
-              <li>Jira, Confluence</li>
-              <li>Responsive Web Design, Accessibility</li>
-              <li>AG Grid, amCharts 4, Storybook</li>
-              <li>React Testing Library, Jest, Enzyme, Cypress</li>
               <li>
-                Adding translation functionality with react-i18next and ttag
+                <b>Frontend</b>: HTML5, CSS3, JavaScript, React, TypeScript,
+                Responsive Design
               </li>
-              <li>Some experience with Node.js, Splunk, Postman</li>
+              <li>
+                <b>Accessibility</b>: WCAG AA, Semantic HTML, ARIA,
+                Screen-reader support (NVDA)
+              </li>
+              <li>
+                <b>Tooling</b>: Visual Studio Code, Storybook
+              </li>
+              <li>
+                <b>Testing:</b> Jest, React Testing Library, Cypress, Enzyme
+              </li>
+              <li>
+                <b>Data/Visualization</b>: AG Grid, amCharts 4
+              </li>
+              <li>
+                <b>Some experience with</b> i18n (react-i18next, ttag), Agile,
+                Splunk, Postman, Redux, Node.js
+              </li>
             </ul>
           </div>
 
@@ -45,13 +65,13 @@ const FE_Portfolio = () => {
                 <i className='fa-solid fa-up-right-from-square'></i>
               </li>
               <li>
+                Accruing experience in Next.js, Redux, Redux Toolkit, RTK Query
+              </li>
+              <li>
                 I am also using AI to enhance my coding productivity and get
                 better-acquainted with this new area of software development.
                 However, I still enjoy problem-solving and writing my own code.
                 I have my thinking cap on when I encounter a challenge!
-              </li>
-              <li>
-                Some experience with Next.js Redux, Redux Toolkit, RTK Query
               </li>
             </ul>
 
