@@ -130,8 +130,7 @@
 
 @media only screen and (max-width: 900px) {
   .modal-content {
-    height: auto;
-    max-height: calc(100vh - 2rem);
+    height: 70%;
   }
 
   .client-xp-btn {
