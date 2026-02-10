@@ -34,7 +34,7 @@ const FE_Portfolio = () => {
                 Screen-reader support (NVDA)
               </li>
               <li>
-                <b>Tooling</b>: Visual Studio Code, Storybook
+                <b>Tooling</b>: Visual Studio Code, Storybook, Git/GitHub
               </li>
               <li>
                 <b>Testing:</b> Jest, React Testing Library, Cypress, Enzyme
