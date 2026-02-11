@@ -80,7 +80,6 @@
 
 .drop-down-inner {
   overflow: hidden;
-  padding: 1rem 1.5rem;
 }
 
 .drop-down-nav a {
@@ -89,16 +88,15 @@
   text-decoration: none;
   display: block;
   font-size: 1.6rem;
-}
-
-.drop-down-nav a:not(:last-child) {
-  margin-bottom: 0.8rem;
-}
-
-.drop-down-nav a {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
   transition:
     color 0.2s ease,
     transform 0.2s ease;
+}
+
+.drop-down-nav a:nth-of-type(1) {
+  margin-top: 1rem;
 }
 
 .drop-down-nav a:hover,
