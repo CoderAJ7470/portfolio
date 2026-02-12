@@ -31,7 +31,7 @@
   transition: transform 200ms ease;
 }
 
-.modal-overlay.open.modal-content {
+.modal-overlay.open .modal-content {
   transform: scale(1) translateY(0);
 }
 
