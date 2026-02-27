@@ -16,8 +16,9 @@ const Projects = () => {
             completed. Feel free to browse the cards below and have a look at my
             projects, see the code and have a look at what I have been learning
             recently. I use Prettier and ES Lint in all of my projects unless
-            otherwise noted. I have also been getting into AI to get better
-            acquainted with it, but I still write a lot of of my own code.
+            otherwise noted. I have also used AI in my development workflow,
+            primarily as an assistant. I continue to write, review, and take
+            full ownership of all code myself.
           </p>
 
           <h2>Recently completed projects</h2>
@@ -92,6 +93,10 @@ const Projects = () => {
                   OKCoders Pro - Introduction to Python
                 </a>
                 <i className='fa-solid fa-up-right-from-square'></i>
+                &nbsp;in November and December, 2025. The course covered
+                everything from the basics of Python to more advanced topics
+                like reading/writing files, scheduling tasks and web scraping. A
+                Capstone project was completed at the end of the course.
               </p>
             </div>
           </section>

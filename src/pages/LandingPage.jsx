@@ -14,9 +14,9 @@ const LandingPage = () => {
           tools. I enjoy web development, am an avid aviation enthusiast and
           have a Meteorology degree as well. I call it the "three-way cloud
           connection". In keeping with that theme, the aircraft window shades
-          below will reveal links to pages showing my credentials, career
-          experience and on what I am working, as well as projects I have
-          recently completed. Intrigued? Check it out!
+          below are "portals" to pages showing my credentials, career experience
+          and on what I am working, as well as projects I have recently
+          completed. Intrigued? Check it out!
         </p>
       </section>
       <Windows />
