@@ -1,13 +1,9 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { experienceData } from '../helpers/experience-content';
 import '../styles/experience-viewer.css';
 
 const ExperienceViewer = ({ isOpen, onClose }) => {
   const [buttonClicked, setButtonClicked] = useState(0);
-
-  useEffect(() => {
-    console.log('clicked button ', buttonClicked);
-  }, [buttonClicked]);
 
   return (
     <div className={`modal-overlay ${isOpen ? 'open' : ''}`} onClick={onClose}>
