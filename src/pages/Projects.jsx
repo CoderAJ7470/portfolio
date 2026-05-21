@@ -66,11 +66,11 @@ const Projects = () => {
               <p className='descriptions'>
                 A simple page I created to show random dad jokes from the{' '}
                 <a
-                  href='https://icanhazdadjoke.com/api'
+                  href='https://dadjokes.bamboozledaardvark.com/'
                   className='list-links'
                   target='_blank'
                 >
-                  icanhazdadjoke api
+                  Dad Joke API
                 </a>
                 <i className='fa-solid fa-up-right-from-square'></i>. I used RTK
                 Query, which I have recently learned, to make the api call and
