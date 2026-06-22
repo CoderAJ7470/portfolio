@@ -18,8 +18,41 @@ const Projects = () => {
             recently. I use Prettier and ES Lint in all of my projects unless
             otherwise noted. I have also used AI in my development workflow,
             primarily as an assistant. I continue to write, review, and take
-            full ownership of all code myself.
+            full ownership of all code I write.
           </p>
+
+          <section className='current-learning'>
+            <h3>What am I working on/learning right now?</h3>
+
+            <ul>
+              <li>
+                Working on{' '}
+                <a
+                  href='https://github.com/CoderAJ7470/LISTR'
+                  target='_blank'
+                  className='list-links'
+                >
+                  LISTR
+                </a>
+                <i className='fa-solid fa-up-right-from-square'></i> - a
+                full-stack project incorporating React, Next.js, Appwrite and
+                Sass. This project came from an idea I had to have a
+                multi-faceted listing tool, with various features like the
+                ability to have calendar reminders, hyperlinks, tracking
+                visuals, user-uploaded images for certain todo items etc.
+              </li>
+              <li>
+                <a
+                  href='https://www.udemy.com/course/ultimate-csharp-masterclass/'
+                  target='_blank'
+                  className='list-links'
+                >
+                  Ultimate C# Masterclass
+                </a>
+                <i className='fa-solid fa-up-right-from-square'></i> on Udemy.
+              </li>
+            </ul>
+          </section>
 
           <h2>Recently completed projects</h2>
 
@@ -38,7 +71,7 @@ const Projects = () => {
                 <span className='projects-tech-used'>
                   Tech used: Vite, React, React Router, JavaScript, CSS3
                 </span>{' '}
-                | Will be updated periodically
+                | Updating this as needed
               </p>
             </div>
             <div className='project-card'>
@@ -166,24 +199,6 @@ const Projects = () => {
                 in the process!
               </p>
             </div>
-          </section>
-
-          <section className='current-learning'>
-            <h3>What am I working on/learning right now?</h3>
-
-            <ul>
-              <li>
-                Currently learning Node.js from Max Schwarzmüller's&nbsp;
-                <a
-                  href='https://www.udemy.com/course/nodejs-the-complete-guide/'
-                  target='_blank'
-                  className='list-links'
-                >
-                  NodeJS - The Complete Guide
-                </a>
-                <i className='fa-solid fa-up-right-from-square'></i> on Udemy
-              </li>
-            </ul>
           </section>
         </section>
       </section>

@@ -30,21 +30,26 @@ const FE_Portfolio = () => {
                 Responsive Design
               </li>
               <li>
-                <b>Accessibility</b>: WCAG AA, Semantic HTML, ARIA,
-                Screen-reader support (NVDA)
-              </li>
-              <li>
-                <b>Tooling</b>: Visual Studio Code, Storybook, Git/GitHub
+                <b>Accessibility</b>: WCAG 2.1 AA, Semantic HTML, ARIA, Screen
+                reader testing (NVDA), Color contrast
               </li>
               <li>
                 <b>Testing:</b> Jest, React Testing Library, Cypress, Enzyme
               </li>
               <li>
-                <b>Data/Visualization</b>: AG Grid, amCharts 4
+                <b>UI/Component Development</b>: Storybook, AG Grid, amCharts 4
               </li>
               <li>
-                <b>Some experience with</b> i18n (react-i18next, ttag), Agile,
-                Splunk, Postman, Redux, Node.js
+                <b>Tooling</b>: Visual Studio Code, Git, GitHub, Bitbucket,
+                Jira, Confluence
+              </li>
+              <li>
+                <b>DevOps</b>: Travis CI, Jenkins
+              </li>
+              <li>
+                <b>Additional</b>: Styled Components, CSS Modules, Sass, i18n
+                (react-i18next, ttag), Agile, Splunk, Postman, Redux, Redux
+                Toolkit, RTK Query, Node.js
               </li>
             </ul>
           </div>

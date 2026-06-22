@@ -23,7 +23,7 @@
   margin-bottom: 1rem;
 }
 
-.projects-content-wrapper h2:not(:first-of-type) {
+.projects-content-wrapper h2 {
   margin-top: 3rem;
 }
 
