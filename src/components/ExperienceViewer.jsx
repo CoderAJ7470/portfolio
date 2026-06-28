@@ -1,9 +1,17 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { experienceData } from '../helpers/experience-content';
 import '../styles/experience-viewer.css';
 
 const ExperienceViewer = ({ isOpen, onClose }) => {
   const [buttonClicked, setButtonClicked] = useState(0);
+  const experienceDescriptionRef = useRef(null);
+
+  useEffect(() => {
+    if (experienceDescriptionRef.current) {
+      console.log('edc: ', experienceDescriptionRef.current);
+      experienceDescriptionRef.current.scrollTo(0, 0);
+    }
+  }, [buttonClicked]);
 
   return (
     <div className={`modal-overlay ${isOpen ? 'open' : ''}`} onClick={onClose}>
@@ -31,7 +39,7 @@ const ExperienceViewer = ({ isOpen, onClose }) => {
           </button>
         </div>
 
-        <section className='experience-card'>
+        <section className='experience-card' ref={experienceDescriptionRef}>
           <div key={buttonClicked} className='experience-content fade'>
             <h2>
               {experienceData[buttonClicked].clientLabel} -{' '}

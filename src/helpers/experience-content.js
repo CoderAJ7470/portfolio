@@ -9,7 +9,8 @@ export const experienceData = [
       `I took the challenge head-on, which was made easier with all of the great support and
        collaboration from my peers`,
       `I handled varying tasks, from as simple as removing old Java backend code to handling
-       complicated api-driven dynamic data handling, with some small frontend tasks sprinkled in`,
+       complicated api-driven dynamic data handling, with some small frontend tasks sprinkled in.`,
+      `For example, one particular task had me paired up with a colleague to programmatically bring in API data into a JS component, which on the surface sounded simple. However, this particular component had a time-driven aspect, and some hidden quirks and bugs which needed to be ironed out. Plus, there were two variations of the same task so it took a long time to resolve everything to pass QA. Also, halfway during the task, my colleague was assigned another area of the project, so that added to the time scale. Eventually, I got it working. I also hopped on many Slack calls and online brainstorming sessions with colleagues in another Sparq office.`,
       `I did get a chance to do some more "involved" frontend work towards the end of the project,
        which looked simple on paper but was made more complex because of the structure of the code - adding a link in the footer. This was to be done on multiple pages in the monorepo. Eventually, this involved many colleagues working across several pages at the same time, and the lead developer on the Sparq team put me in charge of the footer changes, keeping track of which page's footer had the link and which still needed it. While nothing earth-shattering, it was a good first experience in collaboration and communication across different teams`,
     ],
